@@ -1,7 +1,14 @@
 /* GLOBALS */
 * {
-  margin: 0%;
+    margin: 0%;
   padding: 0%;
+  
+}
+
+html {
+  background-image: url(/img/shapes.svg);
+  background-repeat: no-repeat;
+  background-size: 8.5rem ;
 }
 
 /* HEADER */
@@ -12,6 +19,19 @@
 
 #navBar {
   width: 100%;
+  position: fixed;
+}
+
+#nav {
+padding: 1.3rem;
+}
+
+#logo{
+padding: 1.75rem;
+font-family: 'Kanit', sans-serif;
+text-decoration: none;
+font-size: x-large;
+color: #1A2236;
 }
 
 #menubar {
@@ -36,9 +56,13 @@
 
 #name {
   /*   display: flex; */
-  text-align: center;
+  text-align: left;
+  justify-content: center;
   font-family: "Playfair Display", serif;
   font-weight: 550;
+  font-size: 4rem;
+   padding-top: 1rem;
+  color: #1A2236;
 }
 
 p {
