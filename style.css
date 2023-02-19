@@ -255,3 +255,7 @@ background-color: #FEBF52;
     display: flex;
     align-items: center;
   }
+
+  #gridCont {
+    display: grid;
+  }
