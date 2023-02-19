@@ -2,7 +2,7 @@
 * {
   margin: 0%;
   padding: 0%;
-  }
+}
 
 html {
   background-image: url(/img/shapes.svg);
@@ -98,7 +98,7 @@ p {
   color: white;
   width: 100%;
   padding: 6rem;
- font-size: 1rem;
+  font-size: 1rem;
 }
 
 .submit-button:visited {
@@ -142,120 +142,111 @@ p {
 }
   */
 
-
-  #geometryDiv {
-    padding-top: 3.5rem;
-    width: 100vw;
-  }
+#geometryDiv {
+  padding-top: 3.5rem;
+  width: 100vw;
+}
 
 #projectsTitle {
   display: flex;
   align-items: left;
-
 }
 
-  h2 {
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    font-family: "Playfair Display", serif;
-    font-weight: 550;
-    font-size: 4.4rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    color: #1a2236;
-  }
+h2 {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 550;
+  font-size: 4.4rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #1a2236;
+}
 
-about {
+h3 {
   max-width: 22rem;
   min-width: 12rem;
-    text-align: left;
-    justify-content: center;
-    font-family: "Playfair Display", serif;
-    font-weight: 550;
-    font-size: 4rem;
-    padding-top: 1rem;
-    color: #1a2236;
-  }
-  
-  #aboutP {
-    color: #1a2236;
-    text-align: left;
-    padding: 2rem;
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    
-  }
+  text-align: left;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 550;
+  font-size: 4rem;
+  padding-top: 1rem;
+  color: #1a2236;
+}
 
-  .boxContainer {
-    background-color: #1a2236;
-  }
+#aboutP {
+  color: #1a2236;
+  text-align: left;
+  padding: 2rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
 
-  .boxTitle{
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    font-size: x-large;
-  }
+.boxContainer {
+  background-color: #1a2236;
+}
 
-  .codingLangButtons{
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-  }
+.boxTitle {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: x-large;
+}
 
-  .codingLangBackground {
-   background-color: #91d4d4;
+.codingLangButtons {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.codingLangBackground {
+  background-color: #91d4d4;
   padding: 0.2rem;
   outline: 1rem;
-  }
+}
 
-  .stpButton {
-    padding: 1rem;
-  }
+.stpButton {
+  padding: 1rem;
+}
 
-  .projectBox {
-    
-  }
- 
-  #blueBox {
-background-color: #1C528A;
-  }
-  
-  #redBox {
-background-color: #E2505C;
-  }
+#blueBox {
+  background-color: #1c528a;
+}
 
-  #yellowBox {
-background-color: #FEBF52;
-  }
+#redBox {
+  background-color: #e2505c;
+}
 
-  .colorBoxTitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    color: white;
-    font-weight: 1000;
-  }
+#yellowBox {
+  background-color: #febf52;
+}
 
-  .itemsList {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    color: white;
-    font-weight: 600;
-   align
+.colorBoxTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 1000;
+}
 
-  }
+.itemsList {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+}
 
-  .images {
-   padding-left: 2rem;
-  }
+.images {
+  padding-left: 2rem;
+}
 
-  #myCV {
-    display: flex;
-    align-items: center;
-  }
+#myCV {
+  display: flex;
+  align-items: center;
+}
 
-  #gridCont {
-    display: grid;
-  }
+#gridCont {
+  display: grid;
+}
