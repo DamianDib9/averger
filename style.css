@@ -309,3 +309,9 @@ padding-bottom: 2rem; */
   width: 38%;
   padding-top: 2.8rem;
 }
+
+#cardBoxes {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
