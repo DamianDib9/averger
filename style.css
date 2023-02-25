@@ -47,9 +47,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
-  padding: 1rem;
-
+/*   height: 90vh; */
+ /*  padding: 1rem; */
   /*  flex-wrap: wrap; */
 }
 
@@ -84,7 +83,7 @@ p {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   background-color: #1a2236;
-  width: 80%;
+  width: 90%;
   height: 3.7rem;
   align-items: center;
   justify-content: center;
@@ -98,7 +97,9 @@ p {
   color: white;
   width: 100%;
   padding: 6rem;
-  font-size: 1rem;
+  font-size: rem;
+  font-weight: 700;
+  font
 }
 
 .submit-button:visited {
@@ -148,18 +149,17 @@ p {
 }
 
 #projectsTitle {
-  display: flex;
-  align-items: left;
+ 
 }
 
 h2 {
-  display: flex;
   text-align: left;
-  justify-content: center;
+  justify-content: left;
   font-family: "Playfair Display", serif;
   font-weight: 550;
   font-size: 4.4rem;
   padding-top: 1rem;
+  padding-right: 7.5rem;
   padding-bottom: 2rem;
   color: #1a2236;
 }
@@ -176,27 +176,44 @@ h3 {
   color: #1a2236;
 }
 
+
+
+about {
+  font-family: "Playfair Display", serif;
+  font-weight: 550;
+  font-size: 4.4rem;
+  padding-top: 3.7rem;
+  padding-right: 13rem;
+  color: #1a2236;
+}
+
 #aboutP {
   color: #1a2236;
   text-align: left;
-  padding: 2rem;
-  font-size: 1rem;
+  /* padding: 2rem; */
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
+  max-width: 25rem;
 }
 
 .boxContainer {
   background-color: #1a2236;
+  width: 27rem;
 }
 
 .boxTitle {
   font-family: 'Poppins', sans-serif;
   color: aliceblue;
-  font-size: x-large;
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 1em;
 }
 
 .codingLangButtons {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: left;
+  padding-left: 1.6rem;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
@@ -205,23 +222,35 @@ h3 {
 .codingLangBackground {
   background-color: #91d4d4;
   padding: 0.2rem;
+  padding-left: .9rem;
+  padding-right: .9rem;
   outline: 1rem;
+  margin-right: 1rem;
+  font-size: .9rem;
+font-weight: 400;
 }
 
 .stpButton {
-  padding: 1rem;
+  padding: 1.6rem;
+  width: 15rem;
 }
 
 #blueBox {
   background-color: #1c528a;
+  width: 24rem;
+  height: 25rem;
 }
 
 #redBox {
   background-color: #e2505c;
+    width: 24rem;
+  height: 25rem;
 }
 
 #yellowBox {
   background-color: #febf52;
+   width: 24rem;
+  height: 25rem;
 }
 
 .colorBoxTitle {
@@ -229,6 +258,8 @@ h3 {
   font-size: 1.8rem;
   color: white;
   font-weight: 1000;
+  padding-left: 5rem;
+  padding-top: 4rem;
 }
 
 .itemsList {
@@ -236,10 +267,24 @@ h3 {
   font-size: 1rem;
   color: white;
   font-weight: 600;
+  padding-left: 3rem;
 }
 
 .images {
-  padding-left: 2rem;
+    width: 38%;
+  padding-left: 13rem;
+  padding-top: 2.5rem;
+}
+
+.imagesYellow {
+  width: 38%;
+  padding-left: 14.7rem;
+  padding-top: 1rem;
+  
+}
+
+#lampYellow {/* 
+padding-bottom: 2rem; */
 }
 
 #myCV {
@@ -249,4 +294,18 @@ h3 {
 
 #gridCont {
   display: grid;
+}
+
+.picturesPreview {
+  width: 100%;
+}
+
+#getMyCv {
+  padding-right: 3rem;
+}
+
+#hashtagIcon {
+  padding-left: 14.8rem;
+  width: 38%;
+  padding-top: 2.8rem;
 }
