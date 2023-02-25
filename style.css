@@ -47,8 +47,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-/*   height: 90vh; */
- /*  padding: 1rem; */
+
+  /*   height: 90vh; */
+
+  /*  padding: 1rem; */
+
   /*  flex-wrap: wrap; */
 }
 
@@ -99,7 +102,6 @@ p {
   padding: 6rem;
   font-size: rem;
   font-weight: 700;
-  font
 }
 
 .submit-button:visited {
@@ -123,33 +125,9 @@ p {
   transition: ease-in-out 600ms;
 }
 
-/* #main {
-  background-color: rgb(36, 36, 36);
-  padding: 1rem;
-  border-radius: 16px;
-  border: 2px solid black;
-  color: beige;
-  transition: all 500ms ease-in-out;
-  user-select: none;
-  cursor: pointer;
-  box-shadow: 9px 8px 22px -4px rgba(0, 0, 0, 0.87);
-} */
-
-/* .submit-button:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid rgb(180, 10, 166);
-  box-shadow: 9px 8px 22px -4px rgba(179, 176, 176, 0.87);
-}
-  */
-
 #geometryDiv {
   padding-top: 3.5rem;
   width: 100vw;
-}
-
-#projectsTitle {
- 
 }
 
 h2 {
@@ -176,9 +154,7 @@ h3 {
   color: #1a2236;
 }
 
-
-
-about {
+#about {
   font-family: "Playfair Display", serif;
   font-weight: 550;
   font-size: 4.4rem;
@@ -190,6 +166,7 @@ about {
 #aboutP {
   color: #1a2236;
   text-align: left;
+
   /* padding: 2rem; */
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
@@ -211,6 +188,7 @@ about {
 
 .codingLangButtons {
   display: flex;
+
   /* justify-content: space-around; */
   justify-content: left;
   padding-left: 1.6rem;
@@ -222,12 +200,12 @@ about {
 .codingLangBackground {
   background-color: #91d4d4;
   padding: 0.2rem;
-  padding-left: .9rem;
-  padding-right: .9rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
   outline: 1rem;
   margin-right: 1rem;
-  font-size: .9rem;
-font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .stpButton {
@@ -243,13 +221,13 @@ font-weight: 400;
 
 #redBox {
   background-color: #e2505c;
-    width: 24rem;
+  width: 24rem;
   height: 25rem;
 }
 
 #yellowBox {
   background-color: #febf52;
-   width: 24rem;
+  width: 24rem;
   height: 25rem;
 }
 
@@ -271,7 +249,7 @@ font-weight: 400;
 }
 
 .images {
-    width: 38%;
+  width: 38%;
   padding-left: 13rem;
   padding-top: 2.5rem;
 }
@@ -280,10 +258,9 @@ font-weight: 400;
   width: 38%;
   padding-left: 14.7rem;
   padding-top: 1rem;
-  
 }
 
-#lampYellow {/* 
+#lampYellow {/*
 padding-bottom: 2rem; */
 }
 
