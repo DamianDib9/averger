@@ -66,63 +66,42 @@ html {
   color: #1a2236;
 }
 
-p {
+#introduction {
   color: #1a2236;
   text-align: left;
   padding: 2rem;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-}
-
-#introduction {
   max-width: 22rem;
   min-width: 12rem;
 }
 
 /* BUTTON */
 
-.buttons {
+.submit-button {
   display: flex;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   background-color: #1a2236;
   width: 90%;
-  height: 3.7rem;
+  height: 4rem;
   align-items: center;
   justify-content: center;
-  max-width: 22rem;
+  max-width: 24rem;
   min-width: 12rem;
+  color: aliceblue;
+  font-size: x-large;
 }
 
-.submit-button {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  width: 100%;
-  padding: 6rem;
-  font-size: rem;
-  font-weight: 700;
+.submit-button:hover {
+  background-color: aliceblue;
+  color: #1a2236;
 }
 
-.submit-button:visited {
-  text-decoration: none;
-  color: white;
-}
-
-/* HOVER */
-
-.buttons:hover {
-  display: flex;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  background-color: #079c95;
-  width: 80%;
-  height: 3.7rem;
-  align-items: center;
-  justify-content: center;
-  max-width: 22rem;
-  min-width: 12rem;
-  transition: ease-in-out 600ms;
+.submit-button:active {
+  background-color: aliceblue;
+  color: #1a2236;
+  outline: solid black 2px;
 }
 
 #geometryDiv {
@@ -140,6 +119,7 @@ h2 {
   padding-right: 7.5rem;
   padding-bottom: 2rem;
   color: #1a2236;
+  padding-left: 1.5rem;
 }
 
 h3 {
@@ -150,7 +130,6 @@ h3 {
   font-family: "Playfair Display", serif;
   font-weight: 550;
   font-size: 4rem;
-  padding-top: 1rem;
   color: #1a2236;
 }
 
@@ -159,18 +138,25 @@ h3 {
   font-weight: 550;
   font-size: 4.4rem;
   padding-top: 3.7rem;
-  padding-right: 13rem;
+  padding-right: 10rem;
   color: #1a2236;
 }
 
 #aboutP {
   color: #1a2236;
   text-align: left;
+  width: 90%;
+  padding-left: 1.5rem;
 
   /* padding: 2rem; */
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
-  max-width: 25rem;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .boxContainer {
@@ -178,23 +164,27 @@ h3 {
   width: 27rem;
 }
 
-.boxTitle {
+.projectTitle {
   font-family: 'Poppins', sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
-  font-weight: 300;
-  padding: 1em;
+  font-weight: 400;
+  margin: 1rem 0 0 1.6rem;
 }
 
 .codingLangButtons {
   display: flex;
-
-  /* justify-content: space-around; */
   justify-content: left;
   padding-left: 1.6rem;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 .codingLangBackground {
@@ -208,27 +198,69 @@ h3 {
   font-weight: 400;
 }
 
-.stpButton {
-  padding: 1.6rem;
-  width: 15rem;
+.STP-button {
+  display: flex;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a2236;
+  border: solid white 2px;
+  width: 60%;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 24rem;
+  min-width: 12rem;
+  color: aliceblue;
+  font-size: x-large;
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 14.3rem;
+  margin: 1rem 2rem 2rem 1.6rem;
+}
+
+.STP-button:hover {
+  background-color: aliceblue;
+  color: #1a2236;
+}
+
+.STP-button:active {
+  background-color: aliceblue;
+  color: #1a2236;
+  outline: solid black 2px;
 }
 
 #blueBox {
   background-color: #1c528a;
   width: 24rem;
   height: 25rem;
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url(/img/hastag.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 9rem;
 }
 
 #redBox {
   background-color: #e2505c;
   width: 24rem;
   height: 25rem;
+  grid-area: 2 / 1 / 3 / 2;
+  background-image: url(/img/squares.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 9rem;
 }
 
 #yellowBox {
   background-color: #febf52;
   width: 24rem;
   height: 25rem;
+  grid-area: 3 / 1 / 4 / 2;
+  background-image: url(/img/lamp.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 9rem;
 }
 
 .colorBoxTitle {
@@ -277,8 +309,36 @@ padding-bottom: 2rem; */
   width: 100%;
 }
 
-#getMyCv {
+.GetMyCV {
   padding-right: 3rem;
+  display: flex;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a2236;
+  width: 90%;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 24rem;
+  min-width: 12rem;
+  color: aliceblue;
+  font-size: x-large;
+  background-image: url(/img/download.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 15rem;
+  margin: 2rem 2rem 0 1.5rem;
+}
+
+.GetMyCV:hover {
+  background-color: aliceblue;
+  color: #1a2236;
+}
+
+.GetMyCV:active {
+  background-color: aliceblue;
+  color: #1a2236;
+  outline: solid black 2px;
 }
 
 #hashtagIcon {
@@ -291,4 +351,14 @@ padding-bottom: 2rem; */
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+}
+
+.colorboxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 1.4rem;
+  padding-left: 1.5rem;
+  padding-top: 3.5rem;
 }
