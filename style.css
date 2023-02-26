@@ -1,4 +1,3 @@
-/* GLOBALS */
 * {
   margin: 0%;
   padding: 0%;
@@ -9,8 +8,6 @@ html {
   background-repeat: no-repeat;
   background-size: 8.5rem;
 }
-
-/* HEADER */
 
 #menu {
   padding: 1.25rem;
@@ -40,23 +37,13 @@ html {
   align-items: center;
 }
 
-/* MENU */
-
-/* MAIN */
 #mainCont {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /*   height: 90vh; */
-
-  /*  padding: 1rem; */
-
-  /*  flex-wrap: wrap; */
 }
 
 #name {
-  /*   display: flex; */
   text-align: left;
   justify-content: center;
   font-family: "Playfair Display", serif;
@@ -75,8 +62,6 @@ html {
   max-width: 22rem;
   min-width: 12rem;
 }
-
-/* BUTTON */
 
 .submit-button {
   display: flex;
@@ -147,8 +132,6 @@ h3 {
   text-align: left;
   width: 90%;
   padding-left: 1.5rem;
-
-  /* padding: 2rem; */
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
@@ -164,12 +147,58 @@ h3 {
   width: 27rem;
 }
 
-.projectTitle {
+.projectTitle1 {
   font-family: 'Poppins', sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
   margin: 1rem 0 0 1.6rem;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.projectTitle2 {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 1rem 0 0 1.6rem;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.projectTitle3 {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 1rem 0 0 1.6rem;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.projectTitle4 {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 1rem 0 0 1.6rem;
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.projectTitle5 {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 1rem 0 0 1.6rem;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.projectTitle6 {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 1rem 0 0 1.6rem;
+  grid-area: 6 / 1 / 7 / 2;
 }
 
 .codingLangButtons {
@@ -292,10 +321,6 @@ h3 {
   padding-top: 1rem;
 }
 
-#lampYellow {/*
-padding-bottom: 2rem; */
-}
-
 #myCV {
   display: flex;
   align-items: center;
@@ -303,6 +328,10 @@ padding-bottom: 2rem; */
 
 #gridCont {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 
 .picturesPreview {
