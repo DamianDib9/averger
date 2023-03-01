@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="new project for microverse">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
@@ -239,6 +239,46 @@
         </section>
     </main>
 
+    <section id="contactFormBox">
+        <header>
+            <h2 id="getStarted">Get started</h2>
+            <p id="cfp">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna.
+            </p>
+        </header>
+        <form action="https://formspree.io/f/xjvdryln" method="POST" id="contactForm">
+            <input class="formInput" type="text" placeholder="Your name" maxlength="30" name="Your Name" id="yourName" required>
+            <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
+                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                required>
+            <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
+                cols="30" rows="10" required></textarea>
+            <button type="submit" class="submit-button">Start collaboration</button>
+        </form>
+    </section>
+
+    <footer>
+        <header id="footerContent">
+            <h4>Get my Resume</h4>
+            <img id="unionIcon" src="/img/myResume.svg" alt="Union Icon">
+        </header>
+        <br>
+        <ul id="socialMediaList">
+            <li class="socialMediaIcons"> <a href="https://es.stackoverflow.com/"> </a> <img
+                    src="/img/stackOverflow.svg" alt=""></li>
+            <li class="socialMediaIcons"> <a href="https://github.com/DamianDib9"> </a> <img src="/img/VectorgitHub.svg"
+                    alt=""></li>
+            <li class="socialMediaIcons"> <a href="https://twitter.com/DevBustros"> </a> <img
+                    src="/img/Vectortwitter.svg" alt=""></li>
+            <li class="socialMediaIcons"> <a
+                    href="https://ar.linkedin.com/in/damian-dib-bustros-953577261?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                </a> <img src="/img/Vectorlinkedin.svg" alt=""></li>
+            <li class="socialMediaIcons"> <a href=""> </a> <img src="/img/Vectormlogo.svg" alt=""></li>
+            <li class="socialMediaIcons"> <a href="https://angel.co/"> </a> <img src="/img/Vectorperonist.svg" alt="">
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
