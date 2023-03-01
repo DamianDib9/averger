@@ -389,3 +389,105 @@ h2 {
   padding-left: 1.5rem;
   padding-top: 3.5rem;
 }
+
+#contactFormBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 30rem;
+  margin-top: 4rem;
+  background-image: url(/img/shapes.svg);
+  background-repeat: no-repeat;
+  background-size: 8.5rem;
+}
+
+#getStarted {
+  margin-top: 4rem;
+  font-size: 5rem;
+}
+
+.formInput {
+  color: #7d7c84;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+  width: 25rem;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+  outline: 1px #1a2236;
+  margin: 0.4rem;
+  padding-top: 0.3rem;
+  background-color: rgb(255, 255, 255);
+}
+
+#bigInput {
+  color: #7d7c84;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  width: 25rem;
+  border-radius: 5px;
+  padding-bottom: 6rem;
+  outline: 1px #1a2236;
+  margin: 0.4rem;
+  padding-top: 0.9rem;
+  margin-bottom: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+#cfp {
+  color: #1a2236;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2236;
+  margin-top: 4rem;
+  width: 30rem;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #92dcdc;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+#footerContent {
+  display: block;
+}
+
+#socialMediaList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+#unionIcon {
+  size: 1.5rem;
+}
+
+.socialMediaicons {
+  display: flex;
+  display: inline-block;
+  list-style: none;
+  width: 100vw;
+}
