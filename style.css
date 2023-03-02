@@ -13,26 +13,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* BORRAR ESTO LUEGO DE TERMINAR EL FINISH MOBILE PORQUE PUEDE ESTORBAR
-  AL UTILIZAR MEDIA QUERIES */
-}
-
-#menu {
-  padding: 1.25rem;
+  padding-left: 6.2%;
+  padding-right: 6.2%;
 }
 
 #navBar {
-  width: 100%;
-  position: fixed;
-}
-
-#nav {
-  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo {
-  padding: 1.75rem;
+  /*  padding: 1.75rem; */
   font-family: 'Kanit', sans-serif;
   text-decoration: none;
   font-size: x-large;
@@ -40,10 +31,13 @@ body {
 }
 
 #menubar {
-  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  width: 90vw;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 #mainCont {
@@ -58,18 +52,18 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 550;
   font-size: 4rem;
-  padding-top: 1rem;
   color: #1a2236;
+  padding-top: 2rem;
 }
 
 #introduction {
   color: #1a2236;
   text-align: left;
-  padding: 2rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
-  max-width: 22rem;
-  min-width: 12rem;
+  padding-top: 1.4rem;
+  width: 90%;
+  margin-bottom: 2rem;
 }
 
 .submit-button {
@@ -77,14 +71,12 @@ body {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   background-color: #1a2236;
-  width: 90%;
   height: 4rem;
   align-items: center;
   justify-content: center;
-  max-width: 24rem;
-  min-width: 12rem;
   color: aliceblue;
   font-size: x-large;
+  width: 90%;
 }
 
 .submit-button:hover {
@@ -99,8 +91,9 @@ body {
 }
 
 #geometryDiv {
-  padding-top: 3.5rem;
-  width: 30rem;
+  width: 100vw;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -109,29 +102,33 @@ h2 {
   font-family: "Playfair Display", serif;
   font-weight: 550;
   font-size: 4.4rem;
-  padding-top: 1rem;
-  padding-right: 7.5rem;
-  padding-bottom: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
   color: #1a2236;
-  padding-left: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #about {
   font-family: "Playfair Display", serif;
   font-weight: 550;
   font-size: 4.4rem;
-  padding-top: 3.7rem;
-  padding-right: 10rem;
   color: #1a2236;
+  margin-top: 3rem;
 }
 
 #aboutP {
   color: #1a2236;
   text-align: left;
-  padding-left: 1.5rem;
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
-  width: 25rem;
+  width: 90vw;
+  margin-bottom: 1rem;
 }
 
 .textBox {
@@ -142,7 +139,13 @@ h2 {
 
 .boxContainer {
   background-color: #1a2236;
-  width: 27rem;
+  width: 95vw;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projectTitle1 {
@@ -221,7 +224,7 @@ h2 {
   padding-right: 0.9rem;
   outline: 1rem;
   margin-right: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 
@@ -231,19 +234,18 @@ h2 {
   font-family: 'Poppins', sans-serif;
   background-color: #1a2236;
   border: solid white 2px;
-  width: 60%;
+  width: 70%;
   height: 4rem;
   align-items: center;
   justify-content: center;
-  max-width: 24rem;
-  min-width: 12rem;
   color: aliceblue;
-  font-size: x-large;
+  font-size: 1.3rem;
   background-image: url(/img/arrow.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 14.3rem;
   margin: 1rem 2rem 2rem 1.6rem;
+  padding-right: 2rem;
 }
 
 .STP-button:hover {
@@ -259,8 +261,11 @@ h2 {
 
 #blueBox {
   background-color: #1c528a;
-  width: 24rem;
-  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  height: 20rem;
   grid-area: 1 / 1 / 2 / 2;
   background-image: url(/img/hastag.png);
   background-repeat: no-repeat;
@@ -270,8 +275,11 @@ h2 {
 
 #redBox {
   background-color: #e2505c;
-  width: 24rem;
-  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  height: 20rem;
   grid-area: 2 / 1 / 3 / 2;
   background-image: url(/img/squares.svg);
   background-repeat: no-repeat;
@@ -281,13 +289,17 @@ h2 {
 
 #yellowBox {
   background-color: #febf52;
-  width: 24rem;
-  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  height: 20rem;
   grid-area: 3 / 1 / 4 / 2;
   background-image: url(/img/lamp.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 9rem;
+  margin-bottom: 2rem;
 }
 
 .colorBoxTitle {
@@ -295,27 +307,13 @@ h2 {
   font-size: 1.8rem;
   color: white;
   font-weight: 1000;
-  padding-left: 5rem;
-  padding-top: 4rem;
 }
 
 .itemsList {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: 600;
-  padding-left: 3rem;
-}
-
-.images {
-  width: 38%;
-  padding-left: 13rem;
-  padding-top: 2.5rem;
-}
-
-.imagesYellow {
-  width: 38%;
-  padding-left: 14.7rem;
   padding-top: 1rem;
 }
 
@@ -337,7 +335,6 @@ h2 {
 }
 
 .GetMyCV {
-  padding-right: 3rem;
   display: flex;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
@@ -346,15 +343,16 @@ h2 {
   height: 4rem;
   align-items: center;
   justify-content: center;
-  max-width: 24rem;
-  min-width: 12rem;
   color: aliceblue;
   font-size: x-large;
   background-image: url(/img/download.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-position-x: 15rem;
-  margin: 2rem 2rem 0 1.5rem;
+  margin: 4rem 2rem 0 1.5rem;
+  padding-left: 6rem;
+  padding-right: 8rem;
+  margin-bottom: 2rem;
 }
 
 .GetMyCV:hover {
@@ -371,7 +369,6 @@ h2 {
 #hashtagIcon {
   padding-left: 14.8rem;
   width: 38%;
-  padding-top: 2.8rem;
 }
 
 #cardBoxes {
@@ -385,7 +382,109 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0;
-  grid-row-gap: 1.4rem;
-  padding-left: 1.5rem;
-  padding-top: 3.5rem;
+  grid-row-gap: 0.1rem;
+  width: 90%;
 }
+
+#contactFormBox {
+  background-image: url(/img/shapes.svg);
+  background-repeat: no-repeat;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInput {
+  color: #7d7c84;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+  padding-right: 8rem;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+  outline: 1px #1a2236;
+  margin: 0.4rem;
+  padding-top: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  width: 65%;
+}
+
+#bigInput {
+  color: #7d7c84;
+  text-align: left;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  padding-bottom: 6rem;
+  outline: 1px #1a2236;
+  margin: 0.4rem;
+  padding-top: 0.9rem;
+  margin-bottom: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 2rem;
+  width: 91%;
+  background-color: rgb(255, 255, 255);
+}
+
+#cfp {
+  text-align: left;
+  color: #1a2236;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  padding-left: 2rem;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+footer {
+  /* display: flex;
+  flex-direction: row; */
+  background-color: #1a2236;
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #92dcdc;
+  display: inline-block;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+#footerContent {
+  display: block;
+}
+
+#socialMediaList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+#unionIcon {
+  size: 1.5rem;
+}
+
+#getStarted {
+  font-size: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+/* #submitStartCollaboration {
+ padding-left: 3rem;
+} */
