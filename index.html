@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
-    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,26 +28,176 @@
         <nav id="menubar">
             <a href="index.html" id="logo">My Logo</a>
             <a href="#"><img id="menu" src="./img/menu.svg" alt="menu-button"></a>
+            <a href="#" id="fisrtLink" class="desktopNavLinks">Hello</a>
+            <a href="#" class="desktopNavLinks">Portfolio</a>
+            <a href="#" class="desktopNavLinks">About</a>
+            <a href="#" class="desktopNavLinks">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section id="mainCont">
-            <h1 id="name">
-                Damian M. <br> Dib Bustros
-            </h1>
-            <p id="introduction">
-                Hello! I am a software developer! I can help you build a product, feature or website. Take a look at my
-                work. <br>
-                <br> If you like what you see and have a project you need coded, don’t hesitate to contact me.
-            </p>
-            <button type="button" class="submit-button">Start collaboration</button>
-            <br>
-            <br>
-            <div id="geometry">
-                <img id="geometryDiv" src="./img/geometry.svg" alt="geometryDivisor">
+        <div id="flexDesktopMain">
+            <section id="mainCont">
+                <h1 id="name">
+                    Damian M. <br> Dib Bustros
+                </h1>
+                <p id="introduction">
+                    Hello! I am a software developer! I can help you build a product, feature or website. Take a look at
+                    my
+                    work. <br>
+                    <br> If you like what you see and have a project you need coded, don’t hesitate to contact me.
+                </p>
+                <button id="firstSubmitButton" type="button" class="submit-button">Start collaboration</button>
+                <div id="geometry">
+                    <img id="geometryDiv" src="./img/geometry.svg" alt="geometryDivisor">
+                </div>
+            </section>
+            <div id="bigGeometryDiv">
+                <img id="bigGeometry" src="./img/bigGeometry.svg" alt="geometryDivisor">
+            </div>
+        </div>
+        <br>
+
+        <section id="gridMainDesktop">
+            <div id="gridDeskCont">
+                <div class="projectsDiv">
+                    <h3 id="verticalProjects">Projects</h3>
+                </div>
+                <div class="project1Div"> </div>
+                <div class="project2Div"> </div>
+                <div class="shapesPack"> </div>
+                <div class="project6and5">
+                    <ul id="p6And5Flex">
+                        <li><img id="hq6" src="./img/HQproject6.svg" alt="project6"></li>
+                        <li><img id="HQproject5" src="./img/HQproject5.svg" alt="project5"></li>
+                        <li><img id="squares2" src="./img/squaresTogether.svg" alt="squares-together"></li>
+                    </ul>
+                </div>
+                <div class="blueRedShapes"> <img id="blueRedShapes" src="./img/blueSquareRedDrop.svg" alt="blue-red-shapes"> </div>
+                <div class="project4Div"> </div>
+                <div class="project3Div"><!--  <img src="./img/ShaperedRombo.svg" alt="red-rombo"> --> </div>
             </div>
         </section>
+
+        <section id="aboutSqaredGrid">
+            <div class="colorboxes">
+                <div class="plainColorBoxes" id="blueBox">
+                    <div class="colorBoxTitle">
+                        <h3>Languages</h3>
+                    </div>
+                    <ul class="itemsList">
+                        <li> JavaScript (ES5/ES6)</li>
+                        <li> Ruby</li>
+                        <li> HTML</li>
+                        <li> CSS</li>
+                    </ul>
+                </div>
+                <div class="plainColorBoxes" id="redBox">
+                    <div class="colorBoxTitle">
+                        <h3>Frameworks</h3>
+                    </div>
+                    <ul class="itemsList">
+                        <li> Bootstrap</li>
+                        <li> Ruby on rails</li>
+                        <li> RSpec</li>
+                        <li> Capibara</li>
+                        <li> Selenium</li>
+                    </ul>
+                </div>
+                <div class="plainColorBoxes" id="yellowBox">
+                    <div class="colorBoxTitle">
+                        <h3>Skills</h3>
+                    </div>
+                    <ul class="itemsList">
+                        <li> Codekit</li>
+                        <li> Codepen</li>
+                        <li> Github</li>
+                        <li> GitLab</li>
+                        <li> Terminal</li>
+                    </ul>
+                </div>
+                <div id="dottedBackground">
+                    <img src="./img/sqareDots.svg" alt="dotted-square">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutGridDisplay">
+
+            <div class="div1">. </div>
+            <div class="div2">. </div>
+            <div class="div3">.</div>
+            <div class="div4">.</div>
+            <div class="div5">. </div>
+            <div class="div6">
+                <div class="plainColorBoxes" id="blueBox">
+                    <div class="colorBoxTitle">
+                        <h3>Languages</h3>
+                    </div>
+                    <ul class="itemsList">
+                        <li> JavaScript (ES5/ES6)</li>
+                        <li> Ruby</li>
+                        <li> HTML</li>
+                        <li> CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div7">
+                <div class="plainColorBoxes" id="redBox">
+                    <div class="colorBoxTitle">
+                        <h3>Frameworks</h3>
+                    </div>
+                    <ul class="itemsList">
+                        <li> Bootstrap</li>
+                        <li> Ruby on rails</li>
+                        <li> RSpec</li>
+                        <li> Capibara</li>
+                        <li> Selenium</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div8">
+                <div class="plainColorBoxes" id="yellowBox">
+                    <div class="colorBoxTitle">
+                        <h3>Skills</h3>
+                    </div>
+                    <ul class="itemsList">
+                        <li> Codekit</li>
+                        <li> Codepen</li>
+                        <li> Github</li>
+                        <li> GitLab</li>
+                        <li> Terminal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div9"></div>
+            <div class="div10">
+
+                <h2 id="aboutTitle">About</h2>
+                <br>
+                <p id="aboutP">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Mollis nunc sed id semper risus in. Accumsan tortor posuere ac ut consequat
+                    semper
+                    viverra.
+                </p>
+            </div>
+            <div class="div11">
+                <div class="div6">
+                    <div class="buttons" id="myCV">
+                        <button class="GetMyCV" type="button">Get my CV</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
 
         <section id="cardBoxes">
             <div id="projectsTitle">
@@ -191,92 +341,112 @@
         </section>
 
         <section id="about-section">
-            <h2>About</h2>
-            <p id="aboutP">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Mollis nunc sed id semper risus in. Accumsan tortor posuere ac ut consequat semper
-                viverra.
-            </p>
-            <div class="buttons" id="myCV">
-                <button class="GetMyCV" type="button">Get my CV</button>
-            </div>
-            <div class="colorboxes">
-                <div id="blueBox">
-                    <div class="colorBoxTitle">
-                        <h3>Languages</h3>
+            <div id="aboutGrid">
+                <div id="aboutTPB">
+                    <h2 id="aboutTitle">About</h2>
+                    <p id="aboutP">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Mollis nunc sed id semper risus in. Accumsan tortor posuere ac ut consequat
+                        semper
+                        viverra.
+                    </p>
+                    <div class="buttons" id="myCV">
+                        <button class="GetMyCV" type="button">Get my CV</button>
                     </div>
-                    <ul class="itemsList">
-                        <li> JavaScript (ES5/ES6)</li>
-                        <li> Ruby</li>
-                        <li> HTML</li>
-                        <li> CSS</li>
-                    </ul>
                 </div>
-                <div id="redBox">
-                    <div class="colorBoxTitle">
-                        <h3>Frameworks</h3>
+                <div class="colorboxes">
+                    <div class="plainColorBoxes" id="blueBox">
+                        <div class="colorBoxTitle">
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="itemsList">
+                            <li> JavaScript (ES5/ES6)</li>
+                            <li> Ruby</li>
+                            <li> HTML</li>
+                            <li> CSS</li>
+                        </ul>
                     </div>
-                    <ul class="itemsList">
-                        <li> Bootstrap</li>
-                        <li> Ruby on rails</li>
-                        <li> RSpec</li>
-                        <li> Capibara</li>
-                        <li> Selenium</li>
-                    </ul>
-                </div>
-                <div id="yellowBox">
-                    <div class="colorBoxTitle">
-                        <h3>Skills</h3>
+                    <div class="plainColorBoxes" id="redBox">
+                        <div class="colorBoxTitle">
+                            <h3>Frameworks</h3>
+                        </div>
+                        <ul class="itemsList">
+                            <li> Bootstrap</li>
+                            <li> Ruby on rails</li>
+                            <li> RSpec</li>
+                            <li> Capibara</li>
+                            <li> Selenium</li>
+                        </ul>
                     </div>
-                    <ul class="itemsList">
-                        <li> Codekit</li>
-                        <li> Codepen</li>
-                        <li> Github</li>
-                        <li> GitLab</li>
-                        <li> Terminal</li>
-                    </ul>
+                    <div class="plainColorBoxes" id="yellowBox">
+                        <div class="colorBoxTitle">
+                            <h3>Skills</h3>
+                        </div>
+                        <ul class="itemsList">
+                            <li> Codekit</li>
+                            <li> Codepen</li>
+                            <li> Github</li>
+                            <li> GitLab</li>
+                            <li> Terminal</li>
+                        </ul>
+                    </div>
+                    <div id="dottedBackground">
+                        <img src="./img/sqareDots.svg" alt="dotted-square">
+                        </ul>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 
     <section id="contactFormBox">
-        <header>
+        <header id="formTextCont">
             <h2 id="getStarted">Get started</h2>
             <p id="cfp">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna.
             </p>
+            <p id="desktopParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+
         </header>
         <form action="https://formspree.io/f/xjvdryln" method="POST" id="contactForm">
-            <input class="formInput" type="text" placeholder="Your name" maxlength="30" name="Your Name" id="yourName" required>
-            <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
-                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            <div id="inlineInputs">
+            <input class="formInput" type="text" placeholder="Your name" maxlength="30" name="Your Name" id="yourName"
                 required>
-            <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
+            <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
+                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+           </div>
+                <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
                 cols="30" rows="10" required></textarea>
             <button type="submit" id="submitStartCollaboration" class="submit-button">Start collaboration</button>
         </form>
-    </section>
+   
 
     <footer id="idfooter">
         <header id="footerContent">
-            <h4>Get my Resume</h4>
-            <img id="unionIcon" src="./img/myResume.svg" alt="Union Icon">
-        </header>
+            <h4 id="GMRB">Get my Resume</h4>
+            <h4 id="GMCVB">Get my CV</h4>
+            <img id="unionIcon" src="./img/myResume.svg" alt="Union">
+            <img id="downloadIcon" src="./img/download.svg" alt="download">
+            <img id="downloadLightblue" src="./img/downloadLightblue.png" alt="download">
+                </header>
         <br>
         <ul id="socialMediaList">
             <li class="socialMediaIcons"> <a href="https://es.stackoverflow.com/"> </a> <img
                     src="./img/stackOverflow.svg" alt="stack-overflow"></li>
-            <li class="socialMediaIcons"> <a href="https://github.com/DamianDib9"> </a> <img src="./img/VectorgitHub.svg"
-                    alt="github"></li>
+            <li class="socialMediaIcons"> <a href="https://github.com/DamianDib9"> </a> <img
+                    src="./img/VectorgitHub.svg" alt="github"></li>
             <li class="socialMediaIcons"> <a href="https://twitter.com/DevBustros"> </a> <img
                     src="./img/Vectortwitter.svg" alt="twiter"></li>
             <li class="socialMediaIcons"> <a
                     href="https://ar.linkedin.com/in/damian-dib-bustros-953577261?original_referer=https%3A%2F%2Fwww.google.com%2F">
                 </a> <img src="./img/Vectorlinkedin.svg" alt="linkedin"></li>
             <li class="socialMediaIcons"> <a href=""> </a> <img src="./img/Vectormlogo.svg" alt=medium""></li>
-            <li class="socialMediaIcons"> <a href="https://angel.co/"> </a> <img src="./img/Vectorperonist.svg" alt="angellist">
+            <li class="socialMediaIcons"> <a href="https://angel.co/"> </a> <img src="./img/Vectorperonist.svg"
+                    alt="angellist">
             </li>
         </ul>
     </footer>
