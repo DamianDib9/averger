@@ -63,17 +63,44 @@
                 <div class="projectsDiv">
                     <h3 id="verticalProjects">Projects</h3>
                 </div>
-                <div class="project1Div"> </div>
+                <div class="project1Div" id="project1DarkBLuebox">
+                    <div class="boxTitle">
+                        <h3 class="projectTitle1" id="projectTitle1DarkBlueBox"> Project 1 </h3>
+                    </div>
+                    <div class="codingLangButtons" id="CodingLangButtonsDarkBlue">
+                        <ul class="lists" id>
+                            <li class="codingLangBackground codingLangBackgroundDarkBlue"> HTML/CSS</li>
+                            <li class="codingLangBackground codingLangBackgroundDarkBlue">Ruby on Rails</li>
+                            <li class="codingLangBackground codingLangBackgroundDarkBlue">JavaScript</li>
+                        </ul>
+                        <button type="button" class="STP-button" id="stpDarkBlue">See this project</button>
+                    </div>
+                </div>
                 <div class="project2Div"> </div>
                 <div class="shapesPack"> </div>
                 <div class="project6and5">
                     <ul id="p6And5Flex">
-                        <li><img id="hq6" src="./img/HQproject6.svg" alt="project6"></li>
+                        <li>
+                            <div class="project1Div" id="project6DarkBLuebox">
+                                <div class="boxTitle">
+                                    <h3 class="projectTitle1" id="projectTitle16DarkBlueBox"> Project 6 </h3>
+                                </div>
+                                <div class="codingLangButtons" id="CodingLangButtonsDarkBlue6">
+                                    <ul class="lists" id="cdl6">
+                                        <li class="codingLangBackground codingLangBackgroundDarkBlue6"> HTML/CSS</li>
+                                        <li class="codingLangBackground codingLangBackgroundDarkBlue6">Ruby on Rails</li>
+                                        <li class="codingLangBackground" id="codingLangBackgroundDarkBluesp">+1</li>
+                                    </ul>
+                                    <button type="button" class="STP-button" id="stpDarkBlue6">See this project</button>
+                                </div>
+                            </div>
+                        </li>
                         <li><img id="HQproject5" src="./img/HQproject5.svg" alt="project5"></li>
                         <li><img id="squares2" src="./img/squaresTogether.svg" alt="squares-together"></li>
                     </ul>
                 </div>
-                <div class="blueRedShapes"> <img id="blueRedShapes" src="./img/blueSquareRedDrop.svg" alt="blue-red-shapes"> </div>
+                <div class="blueRedShapes"> <img id="blueRedShapes" src="./img/blueSquareRedDrop.svg"
+                        alt="blue-red-shapes"> </div>
                 <div class="project4Div"> </div>
                 <div class="project3Div"><!--  <img src="./img/ShaperedRombo.svg" alt="red-rombo"> --> </div>
             </div>
@@ -414,42 +441,43 @@
         </header>
         <form action="https://formspree.io/f/xjvdryln" method="POST" id="contactForm">
             <div id="inlineInputs">
-            <input class="formInput" type="text" placeholder="Your name" maxlength="30" name="Your Name" id="yourName"
-                required>
-            <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
-                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
-           </div>
-                <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
+                <input class="formInput" type="text" placeholder="Your name" maxlength="30" name="Your Name"
+                    id="yourName" required>
+                <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
+                    pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                    required>
+            </div>
+            <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
                 cols="30" rows="10" required></textarea>
             <button type="submit" id="submitStartCollaboration" class="submit-button">Start collaboration</button>
         </form>
-   
 
-    <footer id="idfooter">
-        <header id="footerContent">
-            <h4 id="GMRB">Get my Resume</h4>
-            <h4 id="GMCVB">Get my CV</h4>
-            <img id="unionIcon" src="./img/myResume.svg" alt="Union">
-            <img id="downloadIcon" src="./img/download.svg" alt="download">
-            <img id="downloadLightblue" src="./img/downloadLightblue.png" alt="download">
-                </header>
-        <br>
-        <ul id="socialMediaList">
-            <li class="socialMediaIcons"> <a href="https://es.stackoverflow.com/"> </a> <img
-                    src="./img/stackOverflow.svg" alt="stack-overflow"></li>
-            <li class="socialMediaIcons"> <a href="https://github.com/DamianDib9"> </a> <img
-                    src="./img/VectorgitHub.svg" alt="github"></li>
-            <li class="socialMediaIcons"> <a href="https://twitter.com/DevBustros"> </a> <img
-                    src="./img/Vectortwitter.svg" alt="twiter"></li>
-            <li class="socialMediaIcons"> <a
-                    href="https://ar.linkedin.com/in/damian-dib-bustros-953577261?original_referer=https%3A%2F%2Fwww.google.com%2F">
-                </a> <img src="./img/Vectorlinkedin.svg" alt="linkedin"></li>
-            <li class="socialMediaIcons"> <a href=""> </a> <img src="./img/Vectormlogo.svg" alt=medium""></li>
-            <li class="socialMediaIcons"> <a href="https://angel.co/"> </a> <img src="./img/Vectorperonist.svg"
-                    alt="angellist">
-            </li>
-        </ul>
-    </footer>
+
+        <footer id="idfooter">
+            <header id="footerContent">
+                <h4 id="GMRB">Get my Resume</h4>
+                <h4 id="GMCVB">Get my CV</h4>
+                <img id="unionIcon" src="./img/myResume.svg" alt="Union">
+                <img id="downloadIcon" src="./img/download.svg" alt="download">
+                <img id="downloadLightblue" src="./img/downloadLightblue.png" alt="download">
+            </header>
+            <br>
+            <ul id="socialMediaList">
+                <li class="socialMediaIcons"> <a href="https://es.stackoverflow.com/"> </a> <img
+                        src="./img/stackOverflow.svg" alt="stack-overflow"></li>
+                <li class="socialMediaIcons"> <a href="https://github.com/DamianDib9"> </a> <img
+                        src="./img/VectorgitHub.svg" alt="github"></li>
+                <li class="socialMediaIcons"> <a href="https://twitter.com/DevBustros"> </a> <img
+                        src="./img/Vectortwitter.svg" alt="twiter"></li>
+                <li class="socialMediaIcons"> <a
+                        href="https://ar.linkedin.com/in/damian-dib-bustros-953577261?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                    </a> <img src="./img/Vectorlinkedin.svg" alt="linkedin"></li>
+                <li class="socialMediaIcons"> <a href=""> </a> <img src="./img/Vectormlogo.svg" alt=medium""></li>
+                <li class="socialMediaIcons"> <a href="https://angel.co/"> </a> <img src="./img/Vectorperonist.svg"
+                        alt="angellist">
+                </li>
+            </ul>
+        </footer>
 </body>
 
 </html>
