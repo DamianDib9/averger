@@ -15,6 +15,8 @@ body {
   align-items: center;
   padding-left: 6.2%;
   padding-right: 6.2%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #navBar {
@@ -244,7 +246,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 14.3rem;
-  margin: 1rem 2rem 2rem 1.6rem;
+  margin: 1rem 2rem 0 1.6rem;
   padding-right: 2rem;
 }
 
@@ -441,8 +443,6 @@ h2 {
 }
 
 footer {
-  /* display: flex;
-  flex-direction: row; */
   background-color: #1a2236;
   margin-top: 4rem;
   width: 100vw;
@@ -485,6 +485,574 @@ h4 {
   width: 90%;
 }
 
-/* #submitStartCollaboration {
- padding-left: 3rem;
-} */
+/* ↓↓↓ ELEMENTS NOT SHOWN IN MOBILE VERSION ↓↓↓ */
+
+.desktopNavLinks {
+  display: none;
+}
+
+#bigGeometryDiv {
+  display: none;
+}
+
+#dottedBackground {
+  display: none;
+}
+
+#gridMainDesktop {
+  display: none;
+}
+
+.aboutGridDisplay {
+  display: none;
+}
+
+#aboutSqaredGrid {
+  display: none;
+}
+
+#desktopParagraph {
+  display: none;
+}
+
+#GMCVB {
+  display: none;
+}
+
+#downloadIcon {
+  display: none;
+}
+
+#downloadLightblue {
+  display: none;
+}
+
+/* ↑↑↑ ELEMENTS NOT SHOWN IN MOBILE VERSION ↑↑↑ */
+
+@media screen and (min-width: 768px) {
+  #navbar {
+    width: 100vw;
+    outline: 1px solid rgb(226, 225, 225);
+    display: block;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  html {
+    background-image: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .desktopNavLinks {
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1a2236;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  #cardBoxes {
+    display: none;
+  }
+
+  #geometry {
+    display: none;
+  }
+
+  #bigGeometryDiv {
+    display: inline-flex;
+  }
+
+  #bigGeometry {
+    display: flex;
+    width: 40vw;
+  }
+
+  #name {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  #gridMainDesktop {
+    display: block;
+    align-items: center;
+    width: 100vw;
+  }
+
+  #about-section {
+    display: none;
+  }
+
+  #gridDeskCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.5fr 0.8fr 1.3fr 0.5fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: 6rem;
+    list-style: none;
+  }
+
+  .projectsDiv {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(./img/sqareDots.svg);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-position: top 0;
+    background-size: 30%;
+    background-position-x: 95%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #verticalProjects {
+    transform: rotate(-90deg);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 8rem;
+    color: #1a2236;
+  }
+
+  .project1Div {
+    grid-area: 1 / 2 / 2 / 4;
+    background-image: url(./img/project1.png);
+    background-repeat: no-repeat;
+    inline-size: 100%;
+  }
+
+  .project2Div {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(./img/HQproject2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 3.5rem;
+  }
+
+  .shapesPack {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(./img/shapesPack.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .project6and5 { grid-area: 2 / 3 / 4 / 4; }
+
+  #p6And5Flex {
+    list-style: none;
+  }
+
+  .blueRedShapes { grid-area: 4 / 1 / 5 / 2; }
+
+  .project4Div {
+    grid-area: 4 / 2 / 5 / 4;
+    background-image: url(./img/HQproject4-2.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 38.3%;
+    overflow: visible;
+  }
+
+  .project3Div {
+    grid-area: 3 / 1 / 4 / 3;
+    background-image: url(./img/HQproject3.svg);
+    background-repeat: no-repeat;
+    background-size: 83%;
+  }
+
+  .aboutGridDisplay {
+    display: grid;
+    grid-template-columns: 0.4fr repeat(2, 1fr) 0.2fr repeat(2, 1fr) 0.4fr;
+    grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: 7rem;
+    width: 100vw;
+  }
+
+  .div1 { grid-area: 1 / 1 / 2 / 8; }
+  .div2 { grid-area: 4 / 1 / 5 / 8; }
+  .div3 { grid-area: 2 / 1 / 4 / 2; }
+  .div4 { grid-area: 2 / 4 / 4 / 5; }
+  .div5 { grid-area: 2 / 7 / 4 / 8; }
+
+  .div6 {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 0;
+    margin: 0;
+  }
+
+  .div7 {
+    grid-area: 2 / 3 / 3 / 4;
+    padding: 0;
+    margin: 0;
+  }
+  .div8 { grid-area: 3 / 2 / 4 / 3; }
+
+  .div9 {
+    grid-area: 3 / 3 / 4 / 4;
+    background-image: url(./img/squarePlusLightblue.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom right;
+  }
+
+  .div10 {
+    grid-area: 2 / 5 / 3 / 7;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .div11 { grid-area: 3 / 5 / 4 / 7; }
+
+  #squares2 {
+    height: 8rem;
+    translate: 14rem  -0.3rem;
+  }
+
+  #blueRedShapes {
+    size: 100%;
+    translate: 0 -4.7rem;
+  }
+
+  #blueBox {
+    background-color: #1c528a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(/img/hastag.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 5rem;
+    padding-top: 1rem;
+    height: 20rem;
+  }
+
+  #redBox {
+    background-color: #e2505c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(/img/squares.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 5rem;
+    padding-top: 1rem;
+    height: 20rem;
+  }
+
+  #yellowBox {
+    background-color: #febf52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 3 / 1 / 4 / 2;
+    background-image: url(/img/lamp.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 5rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    height: 18em;
+  }
+
+  .colorBoxTitle {
+    /* padding: 0;
+margin: 0
+;
+font-size:  1.5rem; */
+  }
+
+  .itemsList {
+    font-size: 1rem;
+  }
+
+  #mainCont {
+    background-image: url(/img/sqareDots.svg);
+    background-position: right 0;
+    background-position: bottom 0;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    padding-right: 2rem;
+  }
+
+  #introduction {
+    width: 26vw;
+    font-size: 1rem;
+  }
+
+  #firstSubmitButton {
+    width: 15vw;
+    margin-right: 11vw;
+    margin-top: 1rem;
+    font-size: 1.1vw;
+  }
+
+  #flexDesktopMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  #aboutTPB {
+    width: 30vw;
+  }
+
+  #aboutTitle {
+    font-size: 6rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin: 0;
+  }
+
+  #aboutP {
+    width: 26vw;
+    font-size: 0.8vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .GetMyCV {
+    display: block;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a2236;
+    width: 40%;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    /* background-image: url(/img/download.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 15rem;
+  */
+  }
+
+  .GetMyCV:hover {
+    background-color: aliceblue;
+    color: #1a2236;
+  }
+
+  .GetMyCV:active {
+    background-color: aliceblue;
+    color: #1a2236;
+    outline: solid black 2px;
+  }
+
+  .colorboxes {
+    display: none;
+  }
+
+  #contactFormBox {
+    width: 100vw;
+    background-image: url(./img/contactFormDeskBackgr.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+  }
+
+  #getStarted {
+    font-weight: 600;
+    font-size: 6rem;
+    margin-top: 5rem;
+  }
+
+  #formTextCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cfp {
+    display: none;
+  }
+
+  #desktopParagraph {
+    display: flex;
+    color: #1a2236;
+    text-align: left;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 30vw;
+    padding-left: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*
+  background-color: #F9F9FA; */
+  }
+
+  .formInput {
+    width: 35%;
+  }
+
+  #inlineInput {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #yourName {
+    border: 1px solid rgba(103, 103, 103, 0.387);
+    width: 8.65rem;
+  }
+
+  #yourEmail {
+    width: 8.6rem;
+    border: 1px solid rgba(103, 103, 103, 0.387);
+  }
+
+  #bigInput {
+    display: inline-block;
+    width: 35rem;
+    height: 3rem;
+    border: 1px solid rgba(103, 103, 103, 0.387);
+    margin-bottom: 2rem;
+  }
+
+  #submitStartCollaboration {
+    width: 15%;
+    font-size: 1rem;
+    outline: 1px solid rgba(205, 204, 204, 0.387);
+    margin-bottom: 4.5rem;
+  }
+
+  #idfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #socialMediaList {
+    width: 20%;
+    padding-right: 2rem;
+  }
+
+  #footerContent {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #GMRB {
+    display: none;
+  }
+
+  #GMCVB {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+  #unionIcon {
+    display: none;
+  }
+
+  #downloadIcon {
+    display: none;
+  }
+
+  #downloadLightblue {
+    display: inline-block;
+    size: 20%;
+  }
+
+  h1 {
+    margin-top: 8rem;
+  }
+
+  #project1DarkBLuebox {
+    padding-top: 13rem;
+  }
+
+  #projectTitle1DarkBlueBox {
+    font-size: 4rem;
+    font-weight: 900;
+    padding-left: 2rem;
+  }
+
+  .codingLangBackgroundDarkBlue {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #CodingLangButtonsDarkBlue {
+    display: block;
+    margin: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #stpDarkBlue {
+    width: 18rem;
+    display: inline-block;
+    margin-top: 3rem;
+    translate: -1.8rem;
+  }
+
+  #stpDarkBlue6 {
+    translate: -22rem -0.5rem;
+    width: 18rem;
+    display: inline-block;
+    margin-top: 3rem;
+  }
+
+  #project6DarkBLuebox {
+    background-image: url(./img/pic62.png);
+  }
+
+  #projectTitle16DarkBlueBox {
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  #cdl6 {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+  }
+
+  .codingLangBackgroundDarkBlue6 {
+    font-size: 0.8rem;
+    width: 5.5rem;
+  }
+
+  #codingLangBackgroundDarkBluesp {
+    font-size: 0.8rem;
+    width: -1rem;
+  }
+}
