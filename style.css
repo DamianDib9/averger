@@ -599,7 +599,6 @@ h4 {
     width: 100vw;
   }
 
-
   #about-section {
     display: none;
   }
@@ -684,118 +683,6 @@ h4 {
     background-repeat: no-repeat;
     background-size: 83%;
   }
-
-
-  /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-  /* #grid-cont {
-  background-color: rgba(0, 0, 255, 0.349);
-}
-
-#grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 1fr 0.5fr;
-  height: 50rem;
-}
-
-.divs:nth-child(odd) {
-    background-color: rgba(255, 0, 0, 0.055) !important;
-}
-
-.divs:nth-child(even) {
-    background-color: rgba(255, 0, 0, 0.288) !important;
-}
-
-.divs {
-    border: 1px solid black;
-    overflow: hidden;
-}
-
-#div1 {
-  grid-area: 1 / 1 / 2 / 2;
-  height: 35rem;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#div1 h2 {
-    transform: rotate(-90deg);
-    font-size: 4rem;
-}
-#div2 {
-  grid-area: 1 / 2 / 2 / 4;
-  overflow: hidden;
-  z-index: 1;
-}
-
-#content-div2 {
-    background-color: rgba(0, 0, 255, 0.123);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    height: 100%;
-    color: white;
-}
-#content-div2::before {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.384);
-    display: block;
-    width: 100%;
-    height: 73%;
-    transform: translateY(52rem);
-    opacity: 1;
-    transition: all 300ms ease-in-out;
-}
-
-#content-div2:hover::before {
-    transform: translateY(4rem);
-    opacity: 1;
-}
-
-#content-div2:hover #cont {
-    transform: translateY(17rem);
-    opacity: 1;
-}
-
-#cont {
-    transform: translateY(40rem);
-    transition: transform 200ms ease-in-out, opacity 600ms ease-in-out;
-    opacity: 0;
-    width: 100%;
-}
-
-h2 {
-    text-align: left;
-    transform: translateX(3rem);
-}
-
-ul {
-    list-style: none;
-    display: flex;
-}
-button {
-    transform: translateX(3rem);
-}
-
-li {
-    padding: 0 1rem;
-}
-
-#div3 {
-  grid-area: 2 / 1 / 3 / 3;
-}
-#div4 {
-  grid-area: 2 / 3 / 3 / 4;
-}
-#div5 {
-  grid-area: 3 / 1 / 4 / 4;
-}
- */
-
-  /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
   .aboutGridDisplay {
     display: grid;
