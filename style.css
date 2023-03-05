@@ -246,7 +246,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 14.3rem;
-  margin: 1rem 2rem 2rem 1.6rem;
+  margin: 1rem 2rem 0 1.6rem;
   padding-right: 2rem;
 }
 
@@ -652,7 +652,7 @@ h4 {
 
   .project1Div {
     grid-area: 1 / 2 / 2 / 4;
-    background-image: url(./img/HQproject1.svg);
+    background-image: url(./img/project1.png);
     background-repeat: no-repeat;
     inline-size: 100%;
   }
@@ -662,7 +662,7 @@ h4 {
     background-image: url(./img/HQproject2.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 4.5rem;
+    background-position-y: 3.5rem;
   }
 
   .shapesPack {
@@ -1003,7 +1003,4 @@ font-size:  1.5rem; */
     margin-top: 8rem;
   }
 
-  #unionIcon {
-    display: none;
-  }
 }
