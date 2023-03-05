@@ -471,6 +471,17 @@ h4 {
   width: 100%;
   padding-bottom: 3rem;
   padding-top: 2rem;
+  opacity: 0; /* establece la opacidad inicial del elemento en 0 */
+  animation: fadeIn 1s ease forwards; /* añade la animación 'fadeIn' al elemento */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* establece la opacidad en 0 al comienzo de la animación */
+  }
+  100% {
+    opacity: 1; /* establece la opacidad en 1 al final de la animación */
+  }
 }
 
 #unionIcon {
