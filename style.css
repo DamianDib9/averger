@@ -246,7 +246,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 14.3rem;
-  margin: 1rem 2rem 2rem 1.6rem;
+  margin: 1rem 2rem 0rem 1.6rem;
   padding-right: 2rem;
 }
 
@@ -650,7 +650,7 @@ h4 {
     background-image: url(./img/HQproject2.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 4.5rem;
+    background-position-y: 3.5rem;
   }
 
   .shapesPack {
@@ -1021,13 +1021,14 @@ font-size:  1.5rem; */
     display: inline-block;
     margin-top: 3rem;
     translate: -1.8rem;
-  }
+    }
 
   #stpDarkBlue6 {
-    translate: -22rem;
+    translate: -22rem -0.5rem;
     width: 18rem;
     display: inline-block;
     margin-top: 3rem;
+     ;
   }
 
   #project6DarkBLuebox {
