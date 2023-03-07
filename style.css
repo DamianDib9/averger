@@ -944,30 +944,30 @@ font-size:  1.5rem; */
     margin-bottom: 2rem;
   }
 
-.formLabels {
-  display: block;
-  flex-direction: ;
-  color: #7d7c84;
-  text-align: left;
-  padding-left: 1.5rem;
-  font-size: 0.9em;
-  font-family: "Poppins", sans-serif;
-}
-
-#inlineInputs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  .formLabels {
+    display: block;
+    color: #7d7c84;
+    text-align: left;
+    padding-left: 1.5rem;
+    font-size: 0.9em;
+    font-family: "Poppins", sans-serif;
   }
-  
+
+  #inlineInputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
   #firstInput { grid-area: 1 / 1 / 2 / 2; }
 
   #secondtInput { grid-area: 1 / 2 / 2 / 3; }
 
-#messageLabel {
-  translate: -16.5rem;}
+  #messageLabel {
+    translate: -16.5rem;
+  }
 
   #submitStartCollaboration {
     width: 15%;
