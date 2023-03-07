@@ -527,6 +527,10 @@ h4 {
   display: none;
 }
 
+.formLabels {
+  display: none;
+}
+
 /* ↑↑↑ ELEMENTS NOT SHOWN IN MOBILE VERSION ↑↑↑ */
 
 @media screen and (min-width: 768px) {
@@ -834,7 +838,8 @@ font-size:  1.5rem; */
 
   #aboutP {
     width: 26vw;
-    font-size: 0.8vw;
+    min-width: 10rem;
+    font-size: 1vw;
     padding: 0;
     margin: 0;
   }
@@ -852,12 +857,6 @@ font-size:  1.5rem; */
     font-size: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-
-    /* background-image: url(/img/download.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: 15rem;
-  */
   }
 
   .GetMyCV:hover {
@@ -944,6 +943,31 @@ font-size:  1.5rem; */
     border: 1px solid rgba(103, 103, 103, 0.387);
     margin-bottom: 2rem;
   }
+
+.formLabels {
+  display: block;
+  flex-direction: ;
+  color: #7d7c84;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+}
+
+#inlineInputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  #firstInput { grid-area: 1 / 1 / 2 / 2; }
+
+  #secondtInput { grid-area: 1 / 2 / 2 / 3; }
+
+#messageLabel {
+  translate: -16.5rem;}
 
   #submitStartCollaboration {
     width: 15%;
