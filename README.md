@@ -6,6 +6,9 @@
 **[RWD portfolio]** is a web development project for Microverse.
 
 To see live demo [Click Here](https://damiandib9.github.io/averger/)
+To see walktrough [Click Here](https://www.loom.com/share/e902921ee9bf4e0f98aba50ef0a9302b)
+
+
 
 
 
