@@ -591,8 +591,6 @@ h4 {
   z-index: -90;
 }
 
-
-
 /* ↑↑↑ ELEMENTS NOT SHOWN IN MOBILE VERSION ↑↑↑ */
 
 @media screen and (min-width: 768px) {
