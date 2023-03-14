@@ -531,6 +531,65 @@ h4 {
   display: none;
 }
 
+#despMenuBar {
+  /* display: none; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mobileMenuLinks {
+  margin: 2rem;
+}
+
+#popMenuCont {
+ /*  display: none; */
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center ;
+ background-image: url(./img/menudesp/menuUPleft.svg);
+ background-repeat: no-repeat;
+ background-size: 35%;
+}
+
+.popNavLinks {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1a2236;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding: 1rem;
+}
+
+#despMenuNavBar {
+  display: flex;
+  flex-direction: column;
+  }
+
+  #cross {
+    position: absolute;
+    translate: 10rem -12rem;
+
+  }
+  #lastLink {
+    padding-bottom: 15rem;
+  }
+
+  #despMenuBackgroundBottom {
+width: 100vw;
+translate: 0 5rem;
+  }
+
+
+
 /* ↑↑↑ ELEMENTS NOT SHOWN IN MOBILE VERSION ↑↑↑ */
 
 @media screen and (min-width: 768px) {
@@ -540,6 +599,9 @@ h4 {
     display: block;
     flex-direction: row;
     align-items: center;
+  }
+  #popMenuCont {
+    display: none;
   }
 
   #menubar {
