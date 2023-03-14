@@ -557,6 +557,7 @@ h4 {
  background-image: url(./img/menudesp/back2.png);
  background-repeat: no-repeat;
  background-size: 100%;
+ background-color: solid white;
 }
 
 .popNavLinks {
@@ -578,16 +579,19 @@ h4 {
   }
 
   #cross {
-    position: absolute;
-    translate: 15rem -8rem;
+    position: fixed;
+    right:0; 
+    top: 0;
     height: 2rem;
-    padding-right: 1rem;
+    padding: 5rem;
   }
 
 
   #despMenuBackgroundBottom {
 width: 100vw;
-translate: 0 12rem;
+position: fixed ;
+bottom: 0;
+left: 0;
   }
 
 
