@@ -554,38 +554,40 @@ h4 {
  flex-direction: column;
  justify-content: center;
  align-items: center ;
- background-image: url(./img/menudesp/menuUPleft.svg);
+ background-image: url(./img/menudesp/back2.png);
  background-repeat: no-repeat;
- background-size: 35%;
+ background-size: 100%;
 }
 
 .popNavLinks {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 2rem;
   text-decoration: none;
   color: #1a2236;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 #despMenuNavBar {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding-top: 2rem;
   }
 
   #cross {
     position: absolute;
-    translate: 10rem -12rem;
+    translate: 15rem -8rem;
+    height: 2rem;
+    padding-right: 1rem;
+  }
 
-  }
-  #lastLink {
-    padding-bottom: 15rem;
-  }
 
   #despMenuBackgroundBottom {
 width: 100vw;
-translate: 0 5rem;
+translate: 0 12rem;
   }
 
 
