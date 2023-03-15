@@ -473,10 +473,6 @@ h4 {
   padding-top: 2rem;
 }
 
-#unionIcon {
-  size: 1.5rem;
-}
-
 #getStarted {
   font-size: 4.4rem;
   display: flex;
@@ -531,6 +527,65 @@ h4 {
   display: none;
 }
 
+#despMenuBar {
+  /* display: none; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileMenuLinks {
+  margin: 2rem;
+}
+
+#popMenuCont {
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/menudesp/back2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: none;
+  z-index: 100;
+}
+
+.popNavLinks {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #1a2236;
+  padding: 1.5rem;
+}
+
+#despMenuNavBar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#cross {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 2rem;
+  padding: 5rem;
+}
+
+#despMenuBackgroundBottom {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -90;
+}
+
 /* ↑↑↑ ELEMENTS NOT SHOWN IN MOBILE VERSION ↑↑↑ */
 
 @media screen and (min-width: 768px) {
@@ -540,6 +595,10 @@ h4 {
     display: block;
     flex-direction: row;
     align-items: center;
+  }
+
+  #popMenuCont {
+    display: none;
   }
 
   #menubar {
@@ -621,8 +680,6 @@ h4 {
     grid-area: 1 / 1 / 2 / 2;
     background-image: url(./img/sqareDots.svg);
     background-repeat: no-repeat;
-    background-position: right 0;
-    background-position: top 0;
     background-size: 30%;
     background-position-x: 95%;
     height: 35rem;
@@ -729,8 +786,8 @@ h4 {
     grid-area: 2 / 5 / 3 / 7;
     display: flex;
     flex-direction: column;
-    align-items: left;
   }
+
   .div11 { grid-area: 3 / 5 / 4 / 7; }
 
   #squares2 {
@@ -739,7 +796,6 @@ h4 {
   }
 
   #blueRedShapes {
-    size: 100%;
     translate: 0 -4.7rem;
   }
 
@@ -792,8 +848,7 @@ h4 {
 
   #mainCont {
     background-image: url(/img/sqareDots.svg);
-    background-position: right 0;
-    background-position: bottom 0;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 90px;
     padding-right: 2rem;
@@ -1004,7 +1059,6 @@ h4 {
 
   #downloadLightblue {
     display: inline-block;
-    size: 20%;
   }
 
   h1 {
