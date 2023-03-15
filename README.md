@@ -129,6 +129,14 @@ gitbash, github, github desktop.
 - Twitter: [@twitterhandle](https://twitter.com/devbustros)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/damian-dib-bustros-953577261)
 
+👤 **Hafed**
+
+- GitHub: [@Hafedefheij](https://github.com/Hafedefheij)
+)
+- LinkedIn: [Hafedefheij](https://linkedin.com/in/Hafedefheij)
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
