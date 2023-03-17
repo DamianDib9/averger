@@ -765,15 +765,19 @@ h4 {
   .div1 {
     grid-area: 1 / 1 / 2 / 8;
   }
+
   .div2 {
     grid-area: 4 / 1 / 5 / 8;
   }
+
   .div3 {
     grid-area: 2 / 1 / 4 / 2;
   }
+
   .div4 {
     grid-area: 2 / 4 / 4 / 5;
   }
+
   .div5 {
     grid-area: 2 / 7 / 4 / 8;
   }
@@ -789,6 +793,7 @@ h4 {
     padding: 0;
     margin: 0;
   }
+
   .div8 {
     grid-area: 3 / 2 / 4 / 3;
   }
@@ -1160,10 +1165,17 @@ h4 {
 
 .popupContainer {
   width: 100vw;
-  height: auto;
-  display: flex;
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
   flex-direction: column;
-  background-image: url(./img/menudesp/fondo\ blanco.png);
+  background-color: rgba(255, 255, 255);
+}
+
+.popup {
+  display: flex;
 }
 
 .popProjectTitle {
@@ -1180,35 +1192,20 @@ h4 {
 }
 
 .popupLang {
-  padding: 0.5rem 1rem;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
   outline: 1px solid #1a2236;
-  color: #1a2236;
-}
-
-.popupSTP {
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-}
-
-.popButText {
-  font-family: "Poppins", sans-serif;
-  color: #1a2236;
-  font-weight: 600;
 }
 
 .popPicture {
   display: flex;
   flex-direction: row;
-  position: fixed;
   background-color: white;
   z-index: 3;
   max-width: 100vw;
-  padding: 5rem 0;
+  padding: 1rem 0;
   justify-content: center;
   align-items: center;
 }
@@ -1229,13 +1226,13 @@ h4 {
 }
 
 .popupP {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   padding-left: 1rem;
   width: 90vw;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #1a2236;
   max-width: 40rem;
 }
@@ -1252,7 +1249,16 @@ h4 {
   align-items: center;
 }
 
+.popupSTP {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+
 .popButText {
+  font-family: "Poppins", sans-serif;
+  color: #1a2236;
+  font-weight: 600;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -1273,4 +1279,35 @@ h4 {
   background-position-y: 0.6rem;
   background-position-x: 20rem;
   background-size: 10%;
+}
+
+.STP-buttons {
+  display: flex;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  background-color: #1a2236;
+  border: solid white 2px;
+  width: 70%;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 1.3rem;
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 14.3rem;
+  margin: 1rem 2rem 0 1.6rem;
+  padding-right: 2rem;
+}
+
+.STP-buttons:hover {
+  background-color: aliceblue;
+  color: #1a2236;
+}
+
+.STP-buttons:active {
+  background-color: aliceblue;
+  color: #1a2236;
+  outline: solid black 2px;
 }
