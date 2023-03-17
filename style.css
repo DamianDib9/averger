@@ -1161,6 +1161,7 @@ h4 {
   text-align: end;
   padding: 2rem;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .popupContainer {
@@ -1253,6 +1254,7 @@ h4 {
   display: inline-block;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .popButText {
@@ -1263,6 +1265,7 @@ h4 {
   flex-direction: row;
   text-align: center;
   translate: -2rem -1rem;
+  cursor: pointer;
 }
 
 #popUnionButton {
