@@ -34,14 +34,9 @@ document.querySelector('#poppContact').onclick = () => {
   goToSection.style.display = 'none';
 };
 
-document.querySelector('#STP1').onclick = () => {
-  const popupDiv1 = document.querySelector('#STP1div');
-  popupDiv1.insertAdjacentHTML = 'html';
-};
-
 const popupProjects = [{
-  picture: ['./img/HQproject1.svg'],
-  projectName: ['Project 1'],
+  picture: 'img/HQproject1.svg',
+  projectName: 'Project 1',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
   seeLink: 'https://damiandib9.github.io/averger/',
@@ -49,8 +44,8 @@ const popupProjects = [{
 },
 
 {
-  picture: ['./img/HQproject2.svg'],
-  projectName: ['Project 2'],
+  picture: 'img/HQproject2.svg',
+  projectName: 'Project 2',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
   seeLink: 'https://damiandib9.github.io/averger/',
@@ -58,8 +53,8 @@ const popupProjects = [{
 },
 
 {
-  picture: ['./img/HQproject3.svg'],
-  projectName: ['Project 3'],
+  picture: 'img/HQproject3.svg',
+  projectName: 'Project 3',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
   seeLink: 'https://damiandib9.github.io/averger/',
@@ -67,8 +62,8 @@ const popupProjects = [{
 },
 
 {
-  picture: ['./img/HQproject4.svg'],
-  projectName: ['Project 4'],
+  picture: 'img/HQproject4.svg',
+  projectName: 'Project 4',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
   seeLink: 'https://damiandib9.github.io/averger/',
@@ -76,8 +71,8 @@ const popupProjects = [{
 },
 
 {
-  picture: ['./img/HQproject5.svg'],
-  projectName: ['Project 5'],
+  picture: 'img/HQproject5.svg',
+  projectName: 'Project 5',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
   seeLink: 'https://damiandib9.github.io/averger/',
@@ -85,69 +80,66 @@ const popupProjects = [{
 },
 
 {
-  picture: ['./img/HQproject6.svg'],
-  projectName: ['Project 6'],
+  picture: 'img/HQproject6.svg',
+  projectName: 'Project 6',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
+  languages: ['Html', 'Ruby on rails', 'JavaScrip', 'CSS'],
   seeLink: 'https://damiandib9.github.io/averger/',
   sourceLink: 'https://github.com/DamianDib9/averger',
-}
+},
 ];
 
+const button = document.querySelectorAll('.STP-buttons');
+const popupContainer = document.querySelector('.popupContainer');
 
+button.forEach((i, indice) => {
+  i.addEventListener('click', () => {
+    const damian = `<div class="popupTextBox">
+          <div class="popboxTitle">
+              <h3 id="crossTypo" class="popProjectTitle"> X </h3>
+              <h3 class="popProjectTitle"> ${popupProjects[indice].projectName} </h3>
+          </div>
+          <div class="popCodingLangButtons">
+              <ul class="lists">
+                  <li class="popupLang">${popupProjects[indice].languages[0]}</li>
+                  <li class="popupLang">${popupProjects[indice].languages[1]}</li>
+                  <li class="popupLang">${popupProjects[indice].languages[2]}</li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="popPicture">
+          <img class="popPicturesPreview" src="${popupProjects[indice].picture}" alt="Project Number 1">
+      </div>
+  
+      <div id="popupPdiv">
+          <p class="popupP">
+          ${popupProjects[indice].description}
+          </p>
+  
+          <div class="inlineBlockButton">
+          <a href="${popupProjects[indice].seeLink}">
+              <button type="button" id="popUnionButton" class="popupButtons">
+                  <h4 class="popButText">See live</h4>
+              </button>
+              </a>
 
+              <a href="${popupProjects[indice].sourceLink}">
+              <button type="button" id="popGitHubButton" class="popupButtons">
+                  <h4 class="popButText"> See source</h4>
+              </button>
+              </a>
+          </div>
+      </div>`;
 
-  const button = document.querySelectorAll('.STP-button');
-  button.forEach((i) => {
-    i.addEventListener('click', () => {
-      const popupContainer = document.querySelector('.popupContainer');
+    popupContainer.innerHTML = damian;
+    popupContainer.classList.add('popup');
 
-  popupProjects.forEach((index, id) => {
-    const projectPopup = document.createElement('div');
-    projectPopup.classList.add('.popup');
-    projectPopup.innerHTML = `
-    <div class="popupTextBox">
-        <div class="popboxTitle">
-            <h3 id="crossTypo" class="popProjectTitle"> X </h3>
-            <h3 class="popProjectTitle"> ${index.projectName} </h3>
-        </div>
-        <div class="popCodingLangButtons">
-            <ul class="lists">
-                <li class="popupLang">${index.languages}</li>
-                <li class="popupLang">${index.languages}</li>
-                <li class="popupLang">${index.languages}</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="popPicture">
-        <img class="popPicturesPreview" src="${index.picture}" alt="Project Number 1">
-    </div>
-
-    <div id="popupPdiv">
-        <p class="popupP">
-        ${index.description}
-        </p>
-
-        <div class="inlineBlockButton">
-            <button type="button" id="popUnionButton" class="popupButtons" href="${index.seeLink}">
-                <h4 class="popButText">See live</h4>
-            </button>
-            <button type="button" id="popGitHubButton" class="popupButtons" href="${index.sourceLink}">
-                <h4 class="popButText"> See source</h4>
-            </button>
-        </div>
-    </div>
-`;
-popupContainer.append(projectPopup);
-    return projectPopup;
+    const closex = document.getElementById('crossTypo');
+    closex.addEventListener('click', () => {
+      popupContainer.classList.remove('popup');
+    });
   });
-    })
-  })
+});
 
-  
-
-
-
-  
-
+// REPETICION
