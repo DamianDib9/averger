@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 #navBar {
   display: flex;
   flex-direction: column;
@@ -206,11 +210,13 @@ h2 {
 
 .codingLangButtons {
   display: flex;
+  flex-direction: column;
   justify-content: left;
   padding-left: 1.6rem;
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
+  width: 100%;
 }
 
 .lists {
@@ -689,9 +695,10 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
   }
 
-  #verticalProjects {
+    #verticalProjects {
     transform: rotate(-90deg);
     font-family: "Playfair Display", serif;
     font-weight: 700;
@@ -817,12 +824,7 @@ h4 {
   }
 
   #squares2 {
-    height: 8rem;
-    translate: 14rem -0.3rem;
-  }
-
-  #blueRedShapes {
-    translate: 0 -4.7rem;
+    right: 0;
   }
 
   #blueBox {
@@ -1120,14 +1122,14 @@ h4 {
     width: 18rem;
     display: inline-block;
     margin-top: 3rem;
-    translate: -1.8rem;
   }
 
-  #stpDarkBlue6 {
-    translate: -22rem -0.5rem;
-    width: 18rem;
-    display: inline-block;
-    margin-top: 3rem;
+  #stpDarkBlue6 {/* 
+    translate: -22rem -0.5rem; */
+    width: 18rem;/* 
+    display: inline-block; */
+    margin-top: 0.5rem;
+    margin-right: 12rem;
   }
 
   #project6DarkBLuebox {
@@ -1173,14 +1175,14 @@ h4 {
     margin-left: 5rem;
     padding-bottom: 2rem;
     font-family: "Poppins", sans-serif;
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: #1a2236;
     font-weight: 900;
   }
 
   #crossTypo2 {
     text-align: end;
-    padding: 2rem;
+    padding-right: 1rem;
     font-weight: 200;
     cursor: pointer;
   }
@@ -1213,6 +1215,7 @@ h4 {
     background-position-x: 20rem;
     background-size: 9%;
     width: 23rem;
+    text-decoration: none;
   }
 
   #popGitHubButton {
@@ -1223,6 +1226,7 @@ h4 {
     background-size: 10%;
     width: 23rem;
     margin-left: 1rem;
+    text-decoration: none;
   }
 
   .popupButtons {
@@ -1234,6 +1238,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
 }
 
@@ -1265,10 +1270,11 @@ h4 {
 }
 
 .superPopUpCont {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
   background-color: #efefef;
+  z-index: 1500;
 }
 
 .popup {
@@ -1277,7 +1283,7 @@ h4 {
 
 .popProjectTitle {
   padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   color: #1a2236;
@@ -1299,7 +1305,6 @@ h4 {
 .popPicture {
   display: flex;
   flex-direction: row;
-  background-color: white;
   z-index: 3;
   max-width: 100vw;
   padding: 1rem 0;
@@ -1358,6 +1363,7 @@ h4 {
   text-align: center;
   translate: -2rem -1rem;
   cursor: pointer;
+
 }
 
 #popUnionButton {
@@ -1406,3 +1412,16 @@ h4 {
   color: #1a2236;
   outline: solid black 2px;
 }
+
+.multiPictures {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.multiPictures25 {
+  width: 25%;
+
+
+}
+
