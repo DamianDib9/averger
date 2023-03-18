@@ -154,12 +154,12 @@ const popupProjectsDesk = [{
 },
 
 {
-  picture: 'img/HQproject2.svg',
-  projectName: 'Project 2',
+  picture: 'img/HQproject6.svg',
+  projectName: 'Project 6',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  languages: ['Html/CSS', 'Ruby on rails', 'JavaScrip'],
+  languages: ['Html', 'Ruby on rails', 'JavaScrip', 'CSS'],
   seeLink: 'https://damiandib9.github.io/averger/',
-  sourceLink: 'https://github.com/DamianDib9/averger',
+  sourceLink: 'https://github.com/DamianDib9/averger'
 },
 
 {
