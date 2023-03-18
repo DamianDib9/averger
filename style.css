@@ -1245,14 +1245,12 @@ h4 {
 }
 
 .popupContainer2 {
-  width: 100vw;
-  height: 100%;
+  height: 100vh;
   display: none;
   position: fixed;
-  left: 0;
-  top: 0;
   flex-direction: column;
-  background-color: rgba(255, 255, 255);
+  width: 100%;
+  background-color: rgb(26, 34, 54, 0.98);
 }
 
 .popupContainer {
@@ -1264,6 +1262,13 @@ h4 {
   top: 0;
   flex-direction: column;
   background-color: rgba(255, 255, 255);
+}
+
+.superPopUpCont {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  background-color: #efefef;
 }
 
 .popup {
