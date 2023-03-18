@@ -254,7 +254,6 @@ button2.forEach((i, indice2) => {
   });
 });
 
-
 const formVal = document.getElementById('contactForm');
 
 function notLowercase(arg) {
@@ -267,7 +266,6 @@ function notLowercase(arg) {
 formVal.addEventListener('submit', (event) => {
   event.preventDefault();
   const errorMessage = document.getElementById('alertP');
-
   
   if (notLowercase(formVal.elements.email.value)) {
     const alertMessage = 'Please write your email in lowercase eg.(myemail@mydomain.com)';
