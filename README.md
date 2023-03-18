@@ -48,7 +48,7 @@ To see walktrough [Click Here](https://www.loom.com/share/e902921ee9bf4e0f98aba5
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML & CSS</li>
+    <li>HTML & CSS & javascript </li>
   </ul>
 </details>
 
