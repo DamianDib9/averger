@@ -698,7 +698,7 @@ h4 {
     z-index: -1;
   }
 
-    #verticalProjects {
+  #verticalProjects {
     transform: rotate(-90deg);
     font-family: "Playfair Display", serif;
     font-weight: 700;
@@ -1124,9 +1124,10 @@ h4 {
     margin-top: 3rem;
   }
 
-  #stpDarkBlue6 {/* 
+  #stpDarkBlue6 {/*
     translate: -22rem -0.5rem; */
-    width: 18rem;/* 
+
+    width: 18rem;/*
     display: inline-block; */
     margin-top: 0.5rem;
     margin-right: 12rem;
@@ -1363,7 +1364,6 @@ h4 {
   text-align: center;
   translate: -2rem -1rem;
   cursor: pointer;
-
 }
 
 #popUnionButton {
@@ -1421,7 +1421,4 @@ h4 {
 
 .multiPictures25 {
   width: 25%;
-
-
 }
-
