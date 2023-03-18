@@ -1,2 +1,8 @@
 test.md
 node_modules/
+validate.js
+hint-report
+popup.js
+popuptry.html
+package.json
+package-lock.json
