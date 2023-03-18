@@ -204,7 +204,8 @@ const popupContainerDesk = document.querySelector('.popupContainer2');
 
 button2.forEach((i, indice2) => {
   i.addEventListener('click', () => {
-    const damian2 = `<div class="popupTextBox">
+    const damian2 = ` <div class="superPopUpCont">
+    <div class="popupTextBox">
           <div class="popboxTitle">
               <h3 id="crossTypo2" class="popProjectTitle"> X </h3>
               <h3 class="popProjectTitle"> ${popupProjectsDesk[indice2].projectName} </h3>
@@ -240,6 +241,7 @@ button2.forEach((i, indice2) => {
               </button>
               </a>
           </div>
+      </div>
       </div>`;
 
     popupContainerDesk.innerHTML = damian2;
@@ -250,4 +252,30 @@ button2.forEach((i, indice2) => {
       popupContainerDesk.classList.remove('popup');
     });
   });
+});
+
+
+const formVal = document.getElementById('contactForm');
+
+function notLowercase(arg) {
+  if (arg.match(/^[a-z@.0-9-_]*$/)) {
+    return false;
+  }
+  return true;
+}
+
+formVal.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const errorMessage = document.getElementById('alertP');
+
+  
+  if (notLowercase(formVal.elements.email.value)) {
+    const alertMessage = 'Please write your email in lowercase eg.(myemail@mydomain.com)';
+    errorMessage.innerHTML = alertMessage;
+    errorMessage.classList.add('alertPmessage');
+  } else {
+    errorMessage.innerHTML = '';
+    errorMessage.classList.remove('alertPmessage');
+    formVal.submit();
+  }
 });
