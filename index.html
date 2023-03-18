@@ -473,7 +473,7 @@
                 </div>
                 <div class="shortInputs" id="secondInput">
                     <label class="formLabels" for="yourName">Your email</label>
-                    <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
+                    <input class="formInput" type="email" placeholder="Your email" name="email" id="yourEmail"
                         pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
                         required>
                 </div>
@@ -481,7 +481,9 @@
             <label class="formLabels" id="messageLabel" for="yourName">Message</label>
             <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
                 cols="30" rows="10" required></textarea>
+                <p id="alertP"></p>
             <button type="submit" id="submitStartCollaboration" class="submit-button">Start collaboration</button>
+        
         </form>
         <footer id="idfooter">
             <header id="footerContent">
