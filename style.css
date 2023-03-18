@@ -589,6 +589,7 @@ h4 {
   z-index: -90;
 }
 
+
 /* ↑↑↑ ELEMENTS NOT SHOWN IN MOBILE VERSION ↑↑↑ */
 
 @media screen and (min-width: 768px) {
@@ -1155,6 +1156,90 @@ h4 {
     font-size: 0.8rem;
     width: -1rem;
   }
+
+  .popPicturesPreview {
+    max-width: 40vw;
+  }
+
+  .lists {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.5rem;
+    justify-content: left;
+    padding-left: 5rem;
+  }
+
+  .popProjectTitle {
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    color: #1a2236;
+    font-weight: 900;
+  }
+
+  #crossTypo2 {
+    text-align: end;
+    padding: 2rem;
+    font-weight: 200;
+    cursor: pointer;
+  }
+
+
+
+  /* QUERI LINEAAA  */
+}
+
+.inlineBlockButton {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .inlineBlockButton {
+    display: flex;
+  }
+
+  .popButText {
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    translate: -2rem -1rem;
+    cursor: pointer;
+  }
+
+  #popUnionButton {
+    background-image: url(./img/popup/unionPopup.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0.7rem;
+    background-position-x: 20rem;
+    background-size: 9%;
+    width: 23rem;
+  }
+
+  #popGitHubButton {
+    background-image: url(./img/popup/GithubPopup.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0.6rem;
+    background-position-x: 20rem;
+    background-size: 10%;
+    width: 23rem;
+    margin-left: 1rem;
+  }
+
+  .popupButtons {
+    width: 8rem;
+    outline: 2px solid #1a2236;
+    margin-bottom: 2rem;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #crossTypo {
@@ -1162,6 +1247,17 @@ h4 {
   padding: 2rem;
   font-weight: 200;
   cursor: pointer;
+}
+
+.popupContainer2 {
+  width: 100vw;
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255);
 }
 
 .popupContainer {
@@ -1213,10 +1309,6 @@ h4 {
 
 .popPicturesPreview {
   width: 90vw;
-}
-
-.inlineBlockButton {
-  display: inline-block;
 }
 
 #popupPdiv {
