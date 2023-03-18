@@ -177,4 +177,4 @@ I would like to thank all of my family for helping me trough this Microverse cou
 
 ## 📝 License <a name="license" href="https://github.com/DamianDib9/averger/blob/Portfolio-Details-Popup-Window/LICENSE">Click Here</a>
 
-This project is [MIT](LICENSE.md) licensed.
+This project is  MIT licensed.
