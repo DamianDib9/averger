@@ -204,7 +204,8 @@ const popupContainerDesk = document.querySelector('.popupContainer2');
 
 button2.forEach((i, indice2) => {
   i.addEventListener('click', () => {
-    const damian2 = `<div class="popupTextBox">
+    const damian2 = `<div class="superPopUpCont">
+    <div class="popupTextBox">
           <div class="popboxTitle">
               <h3 id="crossTypo2" class="popProjectTitle"> X </h3>
               <h3 class="popProjectTitle"> ${popupProjectsDesk[indice2].projectName} </h3>
@@ -240,6 +241,7 @@ button2.forEach((i, indice2) => {
               </button>
               </a>
           </div>
+      </div>
       </div>`;
 
     popupContainerDesk.innerHTML = damian2;
