@@ -266,7 +266,8 @@ function notLowercase(arg) {
 formVal.addEventListener('submit', (event) => {
   event.preventDefault();
   const errorMessage = document.getElementById('alertP');
-    if (notLowercase(formVal.elements.email.value)) {
+
+  if (notLowercase(formVal.elements.email.value)) {
     const alertMessage = 'Please write your email in lowercase eg.(myemail@mydomain.com)';
     errorMessage.innerHTML = alertMessage;
     errorMessage.classList.add('alertPmessage');
