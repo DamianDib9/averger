@@ -202,7 +202,7 @@ const popupProjectsDesk = [{
 const button2 = document.querySelectorAll('.STP-button');
 const popupContainerDesk = document.querySelector('.popupContainer2');
 
-button.forEach((i, indice2) => {
+button2.forEach((i, indice2) => {
   i.addEventListener('click', () => {
     const damian2 = `<div class="popupTextBox">
           <div class="popboxTitle">
@@ -243,11 +243,11 @@ button.forEach((i, indice2) => {
       </div>`;
 
     popupContainerDesk.innerHTML = damian2;
-    popupContainerDesk.classList.add('popup2');
+    popupContainerDesk.classList.add('popup');
 
     const closex2 = document.getElementById('crossTypo2');
     closex2.addEventListener('click', () => {
-      popupContainerDesk.classList.remove('popup2');
+      popupContainerDesk.classList.remove('popup');
     });
   });
 });
