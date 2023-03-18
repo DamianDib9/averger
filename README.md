@@ -133,7 +133,7 @@ gitbash, github, github desktop.
 
 - GitHub: [@Hafedefheij](https://github.com/Hafedefheij)
 )
-- LinkedIn: [Hafedefheij](https://linkedin.com/in/Hafedefheij)
+- LinkedIn: [Hafedefheij](https://www.linkedin.com/in/hafedefhej/)
 
 
 
