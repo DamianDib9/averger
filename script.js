@@ -129,7 +129,9 @@ button.forEach((i, indice) => {
                   <h4 class="popButText"> See source <img class="imgBTN" src="img/popup/GithubPopup.svg" alt=""></h4>
               </button>
               </a>
+          
           </div>
+ 
       </div>`;
 
     popupContainer.innerHTML = damian;
@@ -245,6 +247,10 @@ button2.forEach((i, indice2) => {
               </button>
               </a>
           </div>
+          <div class="prevNext">
+          <button class="prevNextButtons"> <img class="arrows" src="img/menudesp/prev.svg" alt=""> Previous project</button>
+          <button class="prevNextButtons"> Next project <img class="arrows" src="img/menudesp/next.svg" alt=""></button>
+      </div>
       </div>
       </div>`;
 
