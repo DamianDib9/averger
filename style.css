@@ -1160,7 +1160,8 @@ h4 {
   }
 
   .popPicturesPreview {
-    max-width: 40vw;
+    max-width: 75%;
+    width: 950px;
   }
 
   .lists {
@@ -1176,7 +1177,6 @@ h4 {
     margin-left: 5rem;
     padding-bottom: 2rem;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
     color: #1a2236;
     font-weight: 900;
   }
@@ -1191,11 +1191,13 @@ h4 {
 
 .inlineBlockButton {
   display: block;
+
 }
 
 @media screen and (min-width: 768px) {
   .inlineBlockButton {
     display: flex;
+    gap: 15px;
   }
 
   .popButText {
@@ -1209,27 +1211,6 @@ h4 {
     cursor: pointer;
   }
 
-  #popUnionButton {
-    background-image: url(./img/popup/unionPopup.svg);
-    background-repeat: no-repeat;
-    background-position-y: 0.7rem;
-    background-position-x: 20rem;
-    background-size: 9%;
-    width: 23rem;
-    text-decoration: none;
-  }
-
-  #popGitHubButton {
-    background-image: url(./img/popup/GithubPopup.svg);
-    background-repeat: no-repeat;
-    background-position-y: 0.6rem;
-    background-position-x: 20rem;
-    background-size: 10%;
-    width: 23rem;
-    margin-left: 1rem;
-    text-decoration: none;
-  }
-
   .popupButtons {
     width: 8rem;
     outline: 2px solid #1a2236;
@@ -1241,6 +1222,18 @@ h4 {
     align-items: center;
     text-decoration: none;
   }
+
+  .popboxTitle {
+    position: relative;
+  }
+
+  .xcrosstypo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2500;
+  }
+
 }
 
 #crossTypo {
@@ -1250,6 +1243,10 @@ h4 {
   cursor: pointer;
 }
 
+.imgBTN {
+ margin-left: 1rem;   
+}
+
 .popupContainer2 {
   height: 100vh;
   display: none;
@@ -1257,6 +1254,7 @@ h4 {
   flex-direction: column;
   width: 100%;
   background-color: rgb(26, 34, 54, 0.98);
+  overflow: scroll;
 }
 
 .popupContainer {
@@ -1268,14 +1266,21 @@ h4 {
   top: 0;
   flex-direction: column;
   background-color: rgba(255, 255, 255);
+  overflow: scroll;
 }
 
 .superPopUpCont {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
   background-color: #efefef;
   z-index: 1500;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: scroll;
 }
 
 .popup {
@@ -1301,6 +1306,7 @@ h4 {
   font-family: "Poppins", sans-serif;
   color: #1a2236;
   outline: 1px solid #1a2236;
+  font-size: 0.7rem;
 }
 
 .popPicture {
@@ -1331,21 +1337,20 @@ h4 {
   width: 90vw;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #1a2236;
   max-width: 40rem;
 }
 
 .popupButtons {
-  width: 80vw;
-  max-width: 30rem;
   outline: 2px solid #1a2236;
   margin-bottom: 2rem;
-  background-color: #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 12px 0 12px;
+  width: 15rem;
 }
 
 .popupSTP {
@@ -1366,21 +1371,6 @@ h4 {
   cursor: pointer;
 }
 
-#popUnionButton {
-  background-image: url(./img/popup/unionPopup.svg);
-  background-repeat: no-repeat;
-  background-position-y: 0.7rem;
-  background-position-x: 20rem;
-  background-size: 9%;
-}
-
-#popGitHubButton {
-  background-image: url(./img/popup/GithubPopup.svg);
-  background-repeat: no-repeat;
-  background-position-y: 0.6rem;
-  background-position-x: 20rem;
-  background-size: 10%;
-}
 
 .STP-buttons {
   display: flex;
@@ -1416,9 +1406,11 @@ h4 {
 .multiPictures {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 
 .multiPictures25 {
-  width: 25%;
+  width: 15%;
 }
