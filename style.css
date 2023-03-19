@@ -1191,7 +1191,6 @@ h4 {
 
 .inlineBlockButton {
   display: block;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -1223,17 +1222,18 @@ h4 {
     text-decoration: none;
   }
 
+  .popupButtons:hover {
+    outline: 2px solid #efefef;
+    background-color: #1a2236;
+  }
+
+  .popButText:hover {
+    color: white;
+  }
+
   .popboxTitle {
     position: relative;
   }
-
-  .xcrosstypo {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 2500;
-  }
-
 }
 
 #crossTypo {
@@ -1244,7 +1244,7 @@ h4 {
 }
 
 .imgBTN {
- margin-left: 1rem;   
+  margin-left: 1rem;
 }
 
 .popupContainer2 {
@@ -1252,9 +1252,8 @@ h4 {
   display: none;
   position: fixed;
   flex-direction: column;
-  width: 100%;
-  background-color: rgb(26, 34, 54, 0.98);
-  overflow: scroll;
+  width: 100vw;
+  background-color: rgba(26, 34, 54, 0.98);
 }
 
 .popupContainer {
@@ -1270,16 +1269,8 @@ h4 {
 }
 
 .superPopUpCont {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
+  margin: 2rem;
   background-color: #efefef;
-  z-index: 1500;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
   overflow: scroll;
 }
 
@@ -1337,7 +1328,7 @@ h4 {
   width: 90vw;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   color: #1a2236;
   max-width: 40rem;
 }
@@ -1370,7 +1361,6 @@ h4 {
   translate: -2rem -1rem;
   cursor: pointer;
 }
-
 
 .STP-buttons {
   display: flex;
@@ -1412,5 +1402,5 @@ h4 {
 }
 
 .multiPictures25 {
-  width: 15%;
+  width: 18.5%;
 }
