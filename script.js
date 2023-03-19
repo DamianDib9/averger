@@ -96,7 +96,7 @@ button.forEach((i, indice) => {
   i.addEventListener('click', () => {
     const damian = `<div class="popupTextBox">
           <div class="popboxTitle">
-              <h3 id="crossTypo" class="popProjectTitle"> X </h3>
+              <h3 id="crossTypo" class="popProjectTitle"> <img src="img/menudesp/crossMENU.svg" alt="close"> </h3>
               <h3 class="popProjectTitle"> ${popupProjects[indice].projectName} </h3>
           </div>
           <div class="popCodingLangButtons">
@@ -119,14 +119,14 @@ button.forEach((i, indice) => {
   
           <div class="inlineBlockButton">
           <a href="${popupProjects[indice].seeLink}">
-              <button type="button" id="popUnionButton" class="popupButtons">
-                  <h4 class="popButText">See live</h4>
+              <button type="button" id="popUnionButton"  class="popupButtons">
+                  <h4 class="popButText">See live <img class="imgBTN" src="img/popup/unionPopup.svg" alt=""></h4>
               </button>
               </a>
 
               <a href="${popupProjects[indice].sourceLink}">
               <button type="button" id="popGitHubButton" class="popupButtons">
-                  <h4 class="popButText"> See source</h4>
+                  <h4 class="popButText"> See source <img class="imgBTN" src="img/popup/GithubPopup.svg" alt=""></h4>
               </button>
               </a>
           </div>
@@ -207,7 +207,7 @@ button2.forEach((i, indice2) => {
     const damian2 = `<div class="superPopUpCont">
     <div class="popupTextBox">
           <div class="popboxTitle">
-              <h3 id="crossTypo2" class="popProjectTitle"> X </h3>
+              <h3 id="crossTypo2" class="popProjectTitle"> <img class="xcrosstypo" src="img/menudesp/crossMENU.svg" alt="close"> </h3>
               <h3 class="popProjectTitle"> ${popupProjectsDesk[indice2].projectName} </h3>
           </div>
           <div class="popCodingLangButtons">
@@ -222,6 +222,9 @@ button2.forEach((i, indice2) => {
       <div class="popPicture">
           <img class="popPicturesPreview" src="${popupProjectsDesk[indice2].picture}" alt="Project Number 1">
       </div>
+      <div class="multiPictures">
+      <img class="multiPictures25" src="${popupProjectsDesk[indice2].picture}" alt="Project Number 1"> <img class="multiPictures25" src="${popupProjectsDesk[indice2].picture}" alt="Project Number 1"> <img class="multiPictures25" src="${popupProjectsDesk[indice2].picture}" alt="Project Number 1"> <img class="multiPictures25" src="${popupProjectsDesk[indice2].picture}" alt="Project Number 1">
+  </div>
   
       <div id="popupPdiv">
           <p class="popupP">
@@ -231,13 +234,14 @@ button2.forEach((i, indice2) => {
           <div class="inlineBlockButton">
           <a href="${popupProjectsDesk[indice2].seeLink}">
               <button type="button" id="popUnionButton" class="popupButtons">
-                  <h4 class="popButText">See live</h4>
+                  <h4 class="popButText">See live<img class="imgBTN" src="img/popup/unionPopup.svg" alt=""></h4>
+                  
               </button>
               </a>
 
               <a href="${popupProjectsDesk[indice2].sourceLink}">
               <button type="button" id="popGitHubButton" class="popupButtons">
-                  <h4 class="popButText"> See source</h4>
+                  <h4 class="popButText"> See source  <img class="imgBTN" src="img/popup/GithubPopup.svg" alt=""></h4>
               </button>
               </a>
           </div>
