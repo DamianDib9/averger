@@ -1227,12 +1227,41 @@ h4 {
     background-color: #1a2236;
   }
 
+  .popupButtons:active {
+    outline: 2px solid #efefef;
+    background-color: #1a2236;
+  }
+
   .popButText:hover {
     color: white;
   }
 
   .popboxTitle {
     position: relative;
+  }
+
+  .prevNext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .prevNextButtons {
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    line-height: 27px;
+    color: #1a2236;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .arrows {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -1325,10 +1354,10 @@ h4 {
   padding-top: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
-  width: 90vw;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #1a2236;
   max-width: 40rem;
 }
