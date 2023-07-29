@@ -5,7 +5,8 @@
 
 **[RWD portfolio]** is a web development project for Microverse in the week4 of  module 1.
 
-To see live demo [Click Here](https://damiandib9.github.io/averger/) <br>
+To see live demo [Click Here](https://neon-tanuki-e50228.netlify.app/) <br>
+
 To see walktrough [Click Here](https://www.loom.com/share/e902921ee9bf4e0f98aba50ef0a9302b)
 
 
