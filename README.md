@@ -3,9 +3,10 @@
 # 📖 [My Portfolio project] <a name="about-project"></a>
 
 
-**[RWD portfolio]** is a web development project for Microverse.
+**[RWD portfolio]** is a web development project for Microverse in the week4 of  module 1.
 
-To see live demo [Click Here](https://damiandib9.github.io/averger/) <br>
+To see live demo [Click Here](https://neon-tanuki-e50228.netlify.app/) <br>
+
 To see walktrough [Click Here](https://www.loom.com/share/e902921ee9bf4e0f98aba50ef0a9302b)
 
 
@@ -48,7 +49,7 @@ To see walktrough [Click Here](https://www.loom.com/share/e902921ee9bf4e0f98aba5
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML & CSS</li>
+    <li>HTML & CSS & javascript </li>
   </ul>
 </details>
 
@@ -133,7 +134,7 @@ gitbash, github, github desktop.
 
 - GitHub: [@Hafedefheij](https://github.com/Hafedefheij)
 )
-- LinkedIn: [Hafedefheij](https://linkedin.com/in/Hafedefheij)
+- LinkedIn: [Hafedefheij](https://www.linkedin.com/in/hafedefhej/)
 
 
 
@@ -175,6 +176,6 @@ I would like to thank all of my family for helping me trough this Microverse cou
 
 
 
-## 📝 License <a name="license"></a>
+## 📝 License <a name="license" href="https://github.com/DamianDib9/averger/blob/Portfolio-Details-Popup-Window/LICENSE">Click Here</a>
 
-This project is [MIT](LICENSE.md) licensed.
+This project is  MIT licensed.
