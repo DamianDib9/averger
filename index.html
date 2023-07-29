@@ -21,11 +21,11 @@
         rel="stylesheet">
     <title>Damian Dib Portfolio</title>
 </head>
+
 <body>
     <div class="popupContainer">
     </div>
     <div class="popupContainer2">
-       
     </div>
     <header id="popMenuCont">
         <a id="crossButton" href="#"><img id="cross" src="./img/menudesp/crossMENU.svg" alt="menu-button"></a>
@@ -110,7 +110,6 @@
                                         </li>
                                         <li class="codingLangBackground" id="codingLangBackgroundDarkBluesp">+1</li>
                                     </ul>
-                                    
                                     <button type="button" class="STP-button miclase" id="stpDarkBlue6">See this project</button>
                                 </div>
                             </div>
@@ -465,7 +464,6 @@
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         </header>
-        
         <form action="https://formspree.io/f/xjvdryln" method="POST" id="contactForm">
             <div id="inlineInputs">
                 <div class="shortInputs" id="firstInput">
@@ -475,7 +473,7 @@
                 </div>
                 <div class="shortInputs" id="secondInput">
                     <label class="formLabels" for="yourName">Your email</label>
-                    <input class="formInput" type="email" placeholder="Your email" name="Your email" id="yourEmail"
+                    <input class="formInput" type="email" placeholder="Your email" name="email" id="yourEmail"
                         pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
                         required>
                 </div>
@@ -483,7 +481,9 @@
             <label class="formLabels" id="messageLabel" for="yourName">Message</label>
             <textarea id="bigInput" type="text" placeholder="Enter your message here" maxlength="500" name="Message"
                 cols="30" rows="10" required></textarea>
+                <p id="alertP"></p>
             <button type="submit" id="submitStartCollaboration" class="submit-button">Start collaboration</button>
+        
         </form>
         <footer id="idfooter">
             <header id="footerContent">
@@ -511,7 +511,7 @@
             </ul>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="/script.js"></script>
 </body>
 
 </html>
