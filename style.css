@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 #navBar {
   display: flex;
   flex-direction: column;
@@ -26,7 +30,7 @@ body {
 
 #logo {
   /*  padding: 1.75rem; */
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   text-decoration: none;
   font-size: x-large;
   color: #1a2236;
@@ -71,7 +75,7 @@ body {
 .submit-button {
   display: flex;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #1a2236;
   height: 4rem;
   align-items: center;
@@ -151,7 +155,7 @@ h2 {
 }
 
 .projectTitle1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
@@ -160,7 +164,7 @@ h2 {
 }
 
 .projectTitle2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
@@ -169,7 +173,7 @@ h2 {
 }
 
 .projectTitle3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
@@ -178,7 +182,7 @@ h2 {
 }
 
 .projectTitle4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
@@ -187,7 +191,7 @@ h2 {
 }
 
 .projectTitle5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
@@ -196,7 +200,7 @@ h2 {
 }
 
 .projectTitle6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
   font-weight: 400;
@@ -206,17 +210,22 @@ h2 {
 
 .codingLangButtons {
   display: flex;
+  flex-direction: column;
   justify-content: left;
   padding-left: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
+  width: 100%;
 }
 
 .lists {
   display: flex;
   flex-direction: row;
   list-style: none;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .codingLangBackground {
@@ -233,7 +242,7 @@ h2 {
 .STP-button {
   display: flex;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #1a2236;
   border: solid white 2px;
   width: 70%;
@@ -305,14 +314,14 @@ h2 {
 }
 
 .colorBoxTitle {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   color: white;
   font-weight: 1000;
 }
 
 .itemsList {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: white;
   font-weight: 600;
@@ -339,7 +348,7 @@ h2 {
 .GetMyCV {
   display: flex;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #1a2236;
   width: 90%;
   height: 4rem;
@@ -686,6 +695,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
   }
 
   #verticalProjects {
@@ -721,13 +731,17 @@ h4 {
     background-size: 100%;
   }
 
-  .project6and5 { grid-area: 2 / 3 / 4 / 4; }
+  .project6and5 {
+    grid-area: 2 / 3 / 4 / 4;
+  }
 
   #p6And5Flex {
     list-style: none;
   }
 
-  .blueRedShapes { grid-area: 4 / 1 / 5 / 2; }
+  .blueRedShapes {
+    grid-area: 4 / 1 / 5 / 2;
+  }
 
   .project4Div {
     grid-area: 4 / 2 / 5 / 4;
@@ -755,11 +769,25 @@ h4 {
     width: 100vw;
   }
 
-  .div1 { grid-area: 1 / 1 / 2 / 8; }
-  .div2 { grid-area: 4 / 1 / 5 / 8; }
-  .div3 { grid-area: 2 / 1 / 4 / 2; }
-  .div4 { grid-area: 2 / 4 / 4 / 5; }
-  .div5 { grid-area: 2 / 7 / 4 / 8; }
+  .div1 {
+    grid-area: 1 / 1 / 2 / 8;
+  }
+
+  .div2 {
+    grid-area: 4 / 1 / 5 / 8;
+  }
+
+  .div3 {
+    grid-area: 2 / 1 / 4 / 2;
+  }
+
+  .div4 {
+    grid-area: 2 / 4 / 4 / 5;
+  }
+
+  .div5 {
+    grid-area: 2 / 7 / 4 / 8;
+  }
 
   .div6 {
     grid-area: 2 / 2 / 3 / 3;
@@ -772,7 +800,10 @@ h4 {
     padding: 0;
     margin: 0;
   }
-  .div8 { grid-area: 3 / 2 / 4 / 3; }
+
+  .div8 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
 
   .div9 {
     grid-area: 3 / 3 / 4 / 4;
@@ -788,15 +819,12 @@ h4 {
     flex-direction: column;
   }
 
-  .div11 { grid-area: 3 / 5 / 4 / 7; }
-
-  #squares2 {
-    height: 8rem;
-    translate: 14rem  -0.3rem;
+  .div11 {
+    grid-area: 3 / 5 / 4 / 7;
   }
 
-  #blueRedShapes {
-    translate: 0 -4.7rem;
+  #squares2 {
+    right: 0;
   }
 
   #blueBox {
@@ -895,7 +923,7 @@ h4 {
   .GetMyCV {
     display: block;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #1a2236;
     width: 40%;
     height: 4rem;
@@ -1008,9 +1036,13 @@ h4 {
     grid-row-gap: 0;
   }
 
-  #firstInput { grid-area: 1 / 1 / 2 / 2; }
+  #firstInput {
+    grid-area: 1 / 1 / 2 / 2;
+  }
 
-  #secondtInput { grid-area: 1 / 2 / 2 / 3; }
+  #secondtInput {
+    grid-area: 1 / 2 / 2 / 3;
+  }
 
   #messageLabel {
     translate: -16.5rem;
@@ -1090,14 +1122,15 @@ h4 {
     width: 18rem;
     display: inline-block;
     margin-top: 3rem;
-    translate: -1.8rem;
   }
 
-  #stpDarkBlue6 {
-    translate: -22rem -0.5rem;
-    width: 18rem;
-    display: inline-block;
-    margin-top: 3rem;
+  #stpDarkBlue6 {/*
+    translate: -22rem -0.5rem; */
+
+    width: 18rem;/*
+    display: inline-block; */
+    margin-top: 0.5rem;
+    margin-right: 12rem;
   }
 
   #project6DarkBLuebox {
@@ -1125,4 +1158,278 @@ h4 {
     font-size: 0.8rem;
     width: -1rem;
   }
+
+  .popPicturesPreview {
+    max-width: 75%;
+    width: 950px;
+  }
+
+  .lists {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.5rem;
+    justify-content: left;
+    padding-left: 5rem;
+  }
+
+  .popProjectTitle {
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
+    font-weight: 900;
+  }
+
+  #crossTypo2 {
+    text-align: end;
+    padding-right: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+  }
+}
+
+.inlineBlockButton {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .inlineBlockButton {
+    display: flex;
+    gap: 15px;
+  }
+
+  .popButText {
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    translate: -2rem -1rem;
+    cursor: pointer;
+  }
+
+  .popupButtons {
+    width: 8rem;
+    outline: 2px solid #1a2236;
+    margin-bottom: 2rem;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .popupButtons:hover {
+    outline: 2px solid #efefef;
+    background-color: #1a2236;
+  }
+
+  .popupButtons:active {
+    outline: 2px solid #efefef;
+    background-color: #1a2236;
+  }
+
+  .popButText:hover {
+    color: white;
+  }
+
+  .popboxTitle {
+    position: relative;
+  }
+
+  .prevNext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .prevNextButtons {
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    line-height: 27px;
+    color: #1a2236;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .arrows {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#crossTypo {
+  text-align: end;
+  padding: 2rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.imgBTN {
+  margin-left: 1rem;
+}
+
+.popupContainer2 {
+  height: 100vh;
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  width: 100vw;
+  background-color: rgba(26, 34, 54, 0.98);
+}
+
+.popupContainer {
+  width: 100vw;
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255);
+  overflow: scroll;
+}
+
+.superPopUpCont {
+  margin: 2rem;
+  background-color: #efefef;
+  overflow: scroll;
+}
+
+.popup {
+  display: flex;
+}
+
+.popProjectTitle {
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: #1a2236;
+  font-weight: 1000;
+}
+
+.popCodingLangButtons {
+  padding: 0 2rem;
+}
+
+.popupLang {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #1a2236;
+  outline: 1px solid #1a2236;
+  font-size: 0.7rem;
+}
+
+.popPicture {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  max-width: 100vw;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.popPicturesPreview {
+  width: 90vw;
+}
+
+#popupPdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupP {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #1a2236;
+  max-width: 40rem;
+}
+
+.popupButtons {
+  outline: 2px solid #1a2236;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px 0 12px;
+  width: 15rem;
+}
+
+.popupSTP {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.popButText {
+  font-family: "Poppins", sans-serif;
+  color: #1a2236;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  translate: -2rem -1rem;
+  cursor: pointer;
+}
+
+.STP-buttons {
+  display: flex;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  background-color: #1a2236;
+  border: solid white 2px;
+  width: 70%;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 1.3rem;
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 14.3rem;
+  margin: 1rem 2rem 0 1.6rem;
+  padding-right: 2rem;
+}
+
+.STP-buttons:hover {
+  background-color: aliceblue;
+  color: #1a2236;
+}
+
+.STP-buttons:active {
+  background-color: aliceblue;
+  color: #1a2236;
+  outline: solid black 2px;
+}
+
+.multiPictures {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.multiPictures25 {
+  width: 18.5%;
 }
