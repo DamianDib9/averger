@@ -331,6 +331,7 @@ h2 {
 #myCV {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 #gridCont {
